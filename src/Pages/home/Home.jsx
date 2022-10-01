@@ -12,7 +12,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main className='containerHome'>
+    <main >
 
       <Presentation/>
 
