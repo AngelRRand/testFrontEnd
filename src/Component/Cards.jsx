@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Spinner from './Spinner';
 import axios from 'axios'
 import Card from './Card';
 const Cards = () => {
@@ -14,10 +15,10 @@ const Cards = () => {
     return (
         <div>
             {!cosas? 
-                (<p>Cargando</p>) 
+                (<Spinner/>) 
                 : 
                 cosas.map(c =>{
-                    return <Card author={c.author} img={c.image_url}/>
+                    return <Card author={c.author} key={c.id} img={c.image_url}/>
                 })
             }
         </div>
