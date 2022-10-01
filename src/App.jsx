@@ -2,9 +2,8 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom';
 
 //Component
-import Home from './View/home/Home.jsx';
-import LandingPage from './View/landingpage/LandingPage.jsx';
-import Nav from './View/nav/Nav.jsx';
+import Home from './Pages/home/Home.jsx';
+import Nav from './Pages/nav/Nav.jsx';
 
 //Context
 import ArticleState from './Context/Article/ArticleState';
@@ -16,8 +15,7 @@ function App() {
       <div className="App">
         <Nav />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </ArticleState>
