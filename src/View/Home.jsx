@@ -1,15 +1,10 @@
 import React from 'react'
+import Cards from '../Component/Cards'
 
-const Alma = ({cosas}) => {
+const Alma = () => {
   return (
     <div>
-        {!cosas?
-        <p>nada</p>
-        :
-        cosas.map(p => {
-          return <p>{p.author}</p>
-        }
-        )}
+        <Cards/>
     </div>
   )
 }
