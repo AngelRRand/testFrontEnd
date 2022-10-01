@@ -1,0 +1,25 @@
+.containerNav{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(29, 26, 24);
+    color: wheat;
+}
+.logoNav{
+    margin-left: 5vw;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.routesNav{
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+    margin-right: 5vw;
+}
+.routesNav li a{
+    color: wheat;
+    text-decoration: none;
+    font-weight: 600;
+}
