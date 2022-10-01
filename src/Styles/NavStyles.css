@@ -1,27 +1,76 @@
-.containerNav{
+.containerNav {
     display: flex;
     width: 100vw;
     height: 10vh;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    color: rgb(73, 73, 73);
 }
-.logoNav{
+.logoNav {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.containerLogo{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    
+}
+.paralelogramoLeft {
+    background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
+    -webkit-transform: skew(-25deg);
+    -moz-transform: skew(-25deg);
+    -ms-transform: skew(-25deg);
+    -o-transform: skew(-25deg);
+    transform: skew(-25deg);
+}
+.paralelogramoMid {
+    background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
+    -webkit-transform: skew(-25deg);
+    -moz-transform: skew(-25deg);
+    -ms-transform: skew(-25deg);
+    -o-transform: skew(-25deg);
+    transform: skew(-25deg);
+}
+.paralelogramoRight {
+    background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
+    -webkit-transform: skew(-25deg);
+    -moz-transform: skew(-25deg);
+    -ms-transform: skew(-25deg);
+    -o-transform: skew(-25deg);
+    transform: skew(-25deg);
+}
+.logo{
+    width: 7px; 
+    height: 25px;
+    margin: 1.4px;  
+}
+.logoNav h1{
+    margin-left: 1px;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 800;
+    color: rgb(41, 41, 41);
 }
-.routesNav{
+.routesNav {
     display: flex;
     list-style: none;
     width: 40vw;
     justify-content: space-around;
 }
-.routesNav li a{
+
+.routesNav li a {
     color: rgb(116, 116, 116);
     text-decoration: none;
 }
-.btnNav{
+
+.btnNav {
     padding: 15px;
     width: 13vw;
     border: none;
@@ -29,15 +78,18 @@
     color: white;
     font-weight: 600;
     font-size: 1rem;
-    background-image: linear-gradient(to right top, #47ff6f, #00f0b7, #00dae9, #00bffb, #12a1eb);
+    background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
 }
 
 @media screen and (min-width: 800px) {
-    .logoNav{
-        font-size: 2.2rem;
+    .logoNav {
+        flex-direction: row;
+        font-size: 1.3rem;
+        font-weight: 600;
     }
-    .routesNav li a{
+
+    .routesNav li a {
         text-decoration: none;
         font-weight: 600;
     }
-  }
+}

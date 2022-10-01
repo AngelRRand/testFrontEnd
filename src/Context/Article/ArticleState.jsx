@@ -13,7 +13,6 @@ const ArticleState = (props) => {
 
     const getArticles = async () =>{
         const res = await axios.get('https://servicepad-post-api.herokuapp.com/articles/')
-        console.log(res, 'holacontext')
         dispatch({
             type: GET_ARTICLES,
             payload: res.data.data

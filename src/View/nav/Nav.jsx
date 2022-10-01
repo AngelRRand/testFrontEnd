@@ -1,20 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../../Styles/NavStyles.css'
+import logo from '../../Assets/logo.png'
 const Nav = () => {
   return (
     <nav className='containerNav'>
-      <div>
-        <img/>
-        <h1 className='logoNav'>TEST</h1>
+      <div className='logoNav'>
+        <div className='containerLogo'>
+          <div className='paralelogramoLeft logo'></div>
+          <div className='paralelogramoMid logo'></div>
+          <div className='paralelogramoRight logo'></div>
+        </div>
+        <h1 >easybank</h1>
       </div>
       <div>
         <ul className='routesNav'>
-            <li><Link to='/home'>Home</Link></li>
-            <li><Link to='/code'>Code</Link></li>
-            <li><Link to='/about'>Contact</Link></li>
-            <li><Link to='/about'>Blog</Link></li>
-            <li><Link to='/about'>Careers</Link></li>
+          <li><Link to='/home'>Home</Link></li>
+          <li><Link to='/code'>Code</Link></li>
+          <li><Link to='/about'>Contact</Link></li>
+          <li><Link to='/about'>Blog</Link></li>
+          <li><Link to='/about'>Careers</Link></li>
         </ul>
       </div>
       <div>

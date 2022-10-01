@@ -11,20 +11,14 @@ const Home = () => {
       getArticles()
     }, []);
 
-    console.log(articles, 'desdehome')
   return (
     <main className='containerHome'>
 
-      <div className='centerHome'>
-        <div className='containerCards'>
-        {!articles ?
-            (<Spinner />)
-            :
-            articles.map(c => {
-              return <Card author={c.author} key={c.id} img={c.image_url} />
-            })
-          }
-        </div>
+      <div>
+
+      </div>
+      <div>
+        <img src="" alt="" />
       </div>
 
     </main>
