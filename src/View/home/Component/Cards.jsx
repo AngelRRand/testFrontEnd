@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react'
 import Spinner from './Spinner';
 import axios from 'axios'
 import Card from './Card';
+import '../../../Styles/Home.css'
 const Cards = () => {
+
+    
     const [info, setInfo] = useState();
     useEffect(() => {
         const getInfo = async () => {
@@ -11,14 +14,14 @@ const Cards = () => {
         }
         getInfo()
     }, []);
-    console.log(info)
+
     return (
-        <div>
-            {!info? 
-                (<Spinner/>) 
-                : 
-                info.map(c =>{
-                    return <Card author={c.author} key={c.id} img={c.image_url}/>
+        <div className='containerCards'>
+            {!info ?
+                (<Spinner />)
+                :
+                info.map(c => {
+                    return <Card author={c.author} key={c.id} img={c.image_url} />
                 })
             }
         </div>

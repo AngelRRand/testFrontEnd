@@ -1,0 +1,26 @@
+.containerHome {
+    margin: 2rem 0rem;
+    width: 100vw;
+}
+
+.containerCards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+    .containerHome {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .containerCards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+    }
+}
