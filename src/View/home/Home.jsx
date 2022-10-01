@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from '../Component/Cards'
+import Cards from './Component/Cards'
 
 const Alma = () => {
   return (

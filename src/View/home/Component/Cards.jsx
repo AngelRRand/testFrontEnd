@@ -3,21 +3,21 @@ import Spinner from './Spinner';
 import axios from 'axios'
 import Card from './Card';
 const Cards = () => {
-    const [cosas, setCosas] = useState();
+    const [info, setInfo] = useState();
     useEffect(() => {
-        const ObtenerCosas = async () => {
+        const getInfo = async () => {
             let response = await axios.get('https://servicepad-post-api.herokuapp.com/articles/')
-            setCosas(response.data.data)
+            setInfo(response.data.data)
         }
-        ObtenerCosas()
+        getInfo()
     }, []);
-    console.log(cosas)
+    console.log(info)
     return (
         <div>
-            {!cosas? 
+            {!info? 
                 (<Spinner/>) 
                 : 
-                cosas.map(c =>{
+                info.map(c =>{
                     return <Card author={c.author} key={c.id} img={c.image_url}/>
                 })
             }
