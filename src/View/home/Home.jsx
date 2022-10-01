@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import Spinner from './Component/Spinner.jsx';
-import axios from 'axios'
 import Card from './Component/Card';
 import '../../Styles/Home.css'
+import ArticleContext from '../../Context/Article/ArticleContext.jsx';
 const Home = () => {
-  const [info, setInfo] = useState();
+
+  const {articles, getArticles} = useContext(ArticleContext)
+
     useEffect(() => {
-        const getInfo = async () => {
-            let response = await axios.get('https://servicepad-post-api.herokuapp.com/articles/')
-            setInfo(response.data.data)
-        }
-        getInfo()
+      getArticles()
     }, []);
+
+    console.log(articles, 'desdehome')
   return (
     <main className='containerHome'>
 
       <div className='centerHome'>
         <div className='containerCards'>
-          {!info ?
+        {!articles ?
             (<Spinner />)
             :
-            info.map(c => {
+            articles.map(c => {
               return <Card author={c.author} key={c.id} img={c.image_url} />
             })
           }

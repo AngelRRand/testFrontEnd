@@ -2,37 +2,42 @@
     display: flex;
     width: 100vw;
     height: 10vh;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(29, 26, 24);
-    color: wheat;
+    background-color: rgb(255, 255, 255);
+    color: rgb(73, 73, 73);
 }
 .logoNav{
-    margin-left: 5vw;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 .routesNav{
     display: flex;
     list-style: none;
-    width: 50vw;
+    width: 40vw;
     justify-content: space-around;
-    margin-right: 3vw;
 }
 .routesNav li a{
-    color: wheat;
+    color: rgb(116, 116, 116);
     text-decoration: none;
+}
+.btnNav{
+    padding: 15px;
+    width: 13vw;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-weight: 600;
     font-size: 1rem;
+    background-image: linear-gradient(to right top, #47ff6f, #00f0b7, #00dae9, #00bffb, #12a1eb);
 }
 
 @media screen and (min-width: 800px) {
     .logoNav{
-        font-size: 3.2rem;
+        font-size: 2.2rem;
     }
     .routesNav li a{
-        color: wheat;
         text-decoration: none;
         font-weight: 600;
-        font-size: 1.5rem;
     }
   }
