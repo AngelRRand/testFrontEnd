@@ -1,26 +1,23 @@
 .containerHome {
-    margin: 2rem 0rem;
     width: 100vw;
-}
-
-.containerCards {
+    max-width: 100vw;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
 }
 
+.containerImages{
+    width: 60vw;
+}
+.containerImages img{
+    position: absolute;
+}
 @media screen and (min-width: 800px) {
     .containerHome {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-    }
-    .containerCards {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 10px;
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
     }
 }

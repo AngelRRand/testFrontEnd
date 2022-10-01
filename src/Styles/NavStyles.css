@@ -52,7 +52,7 @@
     height: 25px;
     margin: 1.4px;  
 }
-.logoNav h1{
+.logoNav p{
     margin-left: 1px;
     font-size: 1.3rem;
     font-weight: 800;
@@ -64,21 +64,21 @@
     width: 40vw;
     justify-content: space-around;
 }
-
+.routesNav li{
+    height: 9vh;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .routesNav li a {
-    color: rgb(116, 116, 116);
     text-decoration: none;
 }
-
-.btnNav {
-    padding: 15px;
-    width: 13vw;
-    border: none;
-    border-radius: 40px;
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
-    background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
+.routesNav li:hover{
+    border-bottom: #00c1c2 2px solid;
+}
+.routesNav li:hover a{
+    color: rgb(41, 41, 41);
 }
 
 @media screen and (min-width: 800px) {

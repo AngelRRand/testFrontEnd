@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../../Styles/NavStyles.css'
-import logo from '../../Assets/logo.png'
 const Nav = () => {
   return (
     <nav className='containerNav'>
@@ -11,7 +10,7 @@ const Nav = () => {
           <div className='paralelogramoMid logo'></div>
           <div className='paralelogramoRight logo'></div>
         </div>
-        <h1 >easybank</h1>
+        <p >easybank</p>
       </div>
       <div>
         <ul className='routesNav'>
