@@ -34,7 +34,8 @@
 
 .containerPresentation{
     background-color: #F4F5F7;
-    height: 90vh;
+    height: 100vh;
+    overflow: hidden;
 }
 .containerTextPresentation{
     margin: 15vh 0vw;
@@ -55,8 +56,19 @@
     margin: 10px;
     width: 100vw;
 }
-
-
+.containerCardsPresentation{
+    width: 90vw;
+}
+.icon{
+    width: 5vw;
+    height: 5vw;
+    margin: 30px 0px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
 
 
@@ -84,11 +96,8 @@
         font-size: 4rem;
         font-weight: 600;
     }
-
-
-
     .containerTextPresentation{
-        margin: 15vh 10vw;
+        margin: 15vh 5vw;
     }
     .textPresentation h2{
         font-size: 3rem;
@@ -99,5 +108,23 @@
     .spanPresentation{
         width: 60vw;
     }
-    
+
+    .containerCardsPresentation{
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .cardsPresentation{
+        width: 20vw;
+        margin: 10px;
+    }
+    .cardsPresentation h4{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .cardsPresentation p{
+        word-spacing: 3px;
+        line-height: 25px;
+    }
 }
