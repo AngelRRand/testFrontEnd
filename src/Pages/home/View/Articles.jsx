@@ -1,6 +1,7 @@
 import React from 'react'
-
-const Articles = () => {
+import Spinner from '../Component/Spinner'
+import Card from '../Component/Card'
+const Articles = ({articles, lastArticles}) => {
     return (
         <section className='containerLastArticles'>
             <div className='containerTextLastArticles'>
@@ -13,7 +14,16 @@ const Articles = () => {
                     </button>
                 </div>
                 <div>
-
+                    <div className='containerCards'>
+                        {
+                            !lastArticles? 
+                                (<Spinner/> ) 
+                                :
+                                lastArticles.map( a =>{
+                                    return <Card author={a.author} img={a.image_url} key={a.id}/>
+                                })
+                        }
+                    </div>
                 </div>
             </div>
         </section>

@@ -96,6 +96,9 @@
 }
 .containerTitleLastArticle h2{
     font-size: 3rem;
+}
+.containerCards{
+    display: flex;
     
 }
 

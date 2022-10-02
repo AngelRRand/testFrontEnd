@@ -1,4 +1,4 @@
-import { GET_ARTICLES } from "../types";
+import { GET_ARTICLES, GET_LAST_ARTICLES } from "../types";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (state, action) => {
@@ -9,6 +9,11 @@ export default (state, action) => {
       return {
         ...state,
         articles: payload,
+      };
+    case GET_LAST_ARTICLES:
+      return {
+        ...state,
+        lastArticles: payload,
       };
     default:
       return state;

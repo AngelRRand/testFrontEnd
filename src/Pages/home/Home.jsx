@@ -7,20 +7,21 @@ import Articles from './View/Articles';
 
 const Home = () => {
 
-  const { articles, getArticles } = useContext(ArticleContext)
+  const { articles, lastArticles, getArticles, getLastArticles } = useContext(ArticleContext)
 
   useEffect(() => {
     getArticles()
+    getLastArticles()
   }, []);
-
+  //console.log(articles)
   return (
     <main className='containerHome'>
       
       <Welcome/>
 
       <Presentation/>
-      
-      <Articles/>
+
+      <Articles articles={articles} lastArticles={lastArticles}/>
 
     </main>
   )
