@@ -1,12 +1,17 @@
 .containerCard{
     width: 90vw;
+    border: 1px solid black;
 }
 .imageCard{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     height: 30vh;
 }
-
+.containerTextCard{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
 @media screen and (min-width: 800px){
     .containerCard{
         width: 20vw;

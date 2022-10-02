@@ -4,10 +4,12 @@ const Card = ({ title, author, content, img }) => {
   return (
     <div className='containerCard'>
       <img className='imageCard' src={img} />
-      <div>
-        <span>{author}</span>
-        <h3 className='nameCard'>{title}</h3>
-        <p>{content}</p>
+      <div className='containerTextCard'>
+        <div>
+          <span>{author}</span>
+          <h3 className='nameCard'>{title}</h3>
+          <p>{content}</p>
+        </div>
       </div>
     </div>
   )
