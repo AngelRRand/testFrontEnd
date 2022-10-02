@@ -1,63 +1,74 @@
 /* Component Welcome */
-.containerHome{
+.containerHome {
     background-color: #F4F5F7;
 }
+
 .containerWelcome {
     display: flex;
+
     width: 100vw;
     height: 90vh;
     justify-content: center;
 }
-.containerImages{
+
+.containerImages {
     display: none;
 }
-.containertextWelcome{
+
+.containertextWelcome {
     width: 90vw;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.centertextWelcome{
+
+.centertextWelcome {
     flex-direction: column;
 }
-.centertextWelcome h2{
+
+.centertextWelcome h2 {
     font-size: 3rem;
 }
-.text{
+
+.text {
     margin: 20px 0px;
 }
 
 
 /* Component Presentation*/
 
-.containerPresentation{
+.containerPresentation {
     background-color: #FAFAFA;
     overflow: hidden;
 }
-.containerTextPresentation{
-    margin: 15vh 0vw;
-}
-.textPresentation{
+
+
+.textPresentation {
     margin: 5vh 0vh;
 }
-.textPresentation h2{
+
+.textPresentation h2 {
     font-size: 3rem;
     text-align: center;
 }
-.textPresentation span{
+
+.textPresentation span {
     font-size: 1.2rem;
     letter-spacing: 2px;
 }
-.spanPresentation{
-    margin: 10px;
+
+.spanPresentation {
     width: 100vw;
 }
-.containerCardsPresentation{
+
+.containerCardsPresentation {
     width: 90vw;
     overflow: hidden;
 }
-.cardsPresentation{
+
+.cardsPresentation {
     width: 90vw;
     height: 35vh;
     display: flex;
@@ -65,7 +76,8 @@
     justify-content: center;
     align-items: center;
 }
-.iconPresentation{
+
+.iconPresentation {
     width: 15vw;
     height: 15vw;
     margin: 30px 0px;
@@ -75,10 +87,11 @@
     align-items: center;
     display: flex;
 }
-.cardsPresentation p{
+
+.cardsPresentation p {
     margin-top: 10px;
     text-align: center;
-    
+
 }
 
 
@@ -86,22 +99,23 @@
 
 
 
-.containerLastArticles{
+.containerLastArticles {
     background-color: #F4F5F7;
 }
-.containerTextLastArticles{
-    margin: 5vh 0vw;
-}
-.containerTitleLastArticle{
+
+
+.containerTitleLastArticle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5vh;
 }
-.containerTitleLastArticle h2{
+
+.containerTitleLastArticle h2 {
     font-size: 3rem;
 }
-.containerCards{
+
+.containerCards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,77 +139,78 @@
 
 @media screen and (min-width: 800px) {
     .containerWelcome {
-    width: 90vw;
-    max-width: 100vw;
-    display: flex;
-    height: 90vh;
-    justify-content: space-between;
+        width: 90vw;
+        display: flex;
+        height: 90vh;
+        justify-content: space-between;
     }
-    .containertextWelcome{
-        width: 40vw;
-        margin-left: 120px;
+
+    /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+    .containertextWelcome {
+        width: 50vw;
     }
-    .containerImages{
+
+    .containerImages {
         display: block;
         width: 40vw;
     }
-    .containerImages img{
+
+    .containerImages img {
         position: absolute;
         width: 50vw;
     }
-    .centertextWelcome h2{
+
+    .centertextWelcome h2 {
         font-size: 4rem;
         font-weight: 600;
     }
+    
 
-
-    .containerTextPresentation{
-        margin: 15vh 5vw;
-    }
-    .textPresentation h2{
+    .textPresentation h2 {
         font-size: 3rem;
         font-weight: 600;
         text-align: start;
     }
-    .spanPresentation{
+
+    .spanPresentation {
         width: 60vw;
     }
-    .containerCardsPresentation{
-        padding: 10px;
+
+    .containerCardsPresentation {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
-    .cardsPresentation{
+
+    .cardsPresentation {
         width: 20vw;
         height: auto;
         margin: 10px;
         align-items: flex-start;
     }
-    .cardsPresentation h4{
+
+    .cardsPresentation h4 {
         font-size: 1.5rem;
         font-weight: 600;
         margin-bottom: 20px;
     }
-    .cardsPresentation p{
+
+    .cardsPresentation p {
         word-spacing: 3px;
         line-height: 25px;
         text-align: start;
     }
-    .iconPresentation{
+
+    .iconPresentation {
         width: 5vw;
         height: 5vw;
     }
 
 
-    
-    .containerTextLastArticles{
-        margin: 15vh 5vw;
-    }
-    .containerCards{
+    .containerCards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 0px ;
+        margin: 0px;
     }
-    
+
 }

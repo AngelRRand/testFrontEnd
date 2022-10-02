@@ -4,7 +4,7 @@ import Card from '../Component/Card'
 const Articles = ({ articles, lastArticles }) => {
     return (
         <section className='containerLastArticles'>
-            <div className='containerTextLastArticles'>
+            <div className='marginContainers'>
                 <div className='containerTitleLastArticle'>
                     <div>
                         <h2>Latest Articles</h2>

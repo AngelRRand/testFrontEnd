@@ -8,7 +8,7 @@ import Icon4 from '../../../Assets/Icon4.svg'
 const Presentation = () => {
     return (
         <section className='containerPresentation'>
-            <div className='containerTextPresentation'>
+            <div className='marginContainers'>
                 <div className='textPresentation'>
                     <h2>Why choose Easybank?</h2>
                 </div>

@@ -5,7 +5,7 @@ import Vector2 from '../../../Assets/Vector2.png'
 const Welcome = () => {
     return (
         <section className='containerWelcome'>
-            <div className='containertextWelcome'>
+            <div className='containertextWelcome marginContainers'>
                 <div className='centertextWelcome'>
 
                     <h2 className='text'>Next generation digital banking</h2>
