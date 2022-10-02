@@ -32,11 +32,36 @@ p, span, a{
 .marginContainers{
   margin: 15vh 0vw;
 }
+
+.paralelogramoLeft {
+  background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
+  -webkit-transform: skew(-25deg);
+  -moz-transform: skew(-25deg);
+  -ms-transform: skew(-25deg);
+  -o-transform: skew(-25deg);
+  transform: skew(-25deg);
+}
+.paralelogramoMid {
+  background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
+  -webkit-transform: skew(-25deg);
+  -moz-transform: skew(-25deg);
+  -ms-transform: skew(-25deg);
+  -o-transform: skew(-25deg);
+  transform: skew(-25deg);
+}
+.paralelogramoRight {
+  background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
+  -webkit-transform: skew(-25deg);
+  -moz-transform: skew(-25deg);
+  -ms-transform: skew(-25deg);
+  -o-transform: skew(-25deg);
+  transform: skew(-25deg);
+}
 @media screen and (min-width: 800px){
   .btnNav{
     width: 14vw;
   }
   .marginContainers{
-    margin: 15vh 5vw;
+    margin: 7vh 5vw;
   }
 }

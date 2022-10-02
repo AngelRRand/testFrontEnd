@@ -7,6 +7,7 @@ import Nav from './Pages/nav/Nav.jsx';
 
 //Context
 import ArticleState from './Context/Article/ArticleState';
+import Footer from './Pages/footer/Footer';
 function App() {
 
 
@@ -14,9 +15,12 @@ function App() {
     <ArticleState>
       <div className="App">
         <Nav />
+
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+
+        <Footer/>
       </div>
     </ArticleState>
   )
