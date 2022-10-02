@@ -23,7 +23,6 @@
 }
 .centertextWelcome h2{
     font-size: 3rem;
-    font-weight: 600;
 }
 .text{
     margin: 20px 0px;
@@ -33,8 +32,7 @@
 /* Component Presentation*/
 
 .containerPresentation{
-    background-color: #F4F5F7;
-    height: 100vh;
+    background-color: #FAFAFA;
     overflow: hidden;
 }
 .containerTextPresentation{
@@ -45,7 +43,6 @@
 }
 .textPresentation h2{
     font-size: 3rem;
-    font-weight: 600;
     text-align: center;
 }
 .textPresentation span{
@@ -59,9 +56,16 @@
 .containerCardsPresentation{
     width: 90vw;
 }
-.icon{
-    width: 5vw;
-    height: 5vw;
+.cardsPresentation{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.iconPresentation{
+    width: 15vw;
+    height: 15vw;
     margin: 30px 0px;
     border-radius: 50%;
     background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
@@ -69,6 +73,45 @@
     align-items: center;
     display: flex;
 }
+.cardsPresentation p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* Component Articles */
+
+
+
+.containerLastArticles{
+    background-color: #F4F5F7;
+}
+.containerTextLastArticles{
+    margin: 5vh 0vw;
+}
+.containerTitleLastArticle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerTitleLastArticle h2{
+    font-size: 3rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -96,6 +139,8 @@
         font-size: 4rem;
         font-weight: 600;
     }
+
+
     .containerTextPresentation{
         margin: 15vh 5vw;
     }
@@ -104,12 +149,11 @@
         font-weight: 600;
         text-align: start;
     }
-
     .spanPresentation{
         width: 60vw;
     }
-
     .containerCardsPresentation{
+        height: 50vh;
         padding: 10px;
         display: flex;
         justify-content: space-around;
@@ -117,6 +161,7 @@
     .cardsPresentation{
         width: 20vw;
         margin: 10px;
+        align-items: flex-start;
     }
     .cardsPresentation h4{
         font-size: 1.5rem;
@@ -126,5 +171,16 @@
     .cardsPresentation p{
         word-spacing: 3px;
         line-height: 25px;
+        text-align: start;
+    }
+    .iconPresentation{
+        width: 5vw;
+        height: 5vw;
+    }
+
+
+    
+    .containerTextLastArticles{
+        margin: 15vh 5vw;
     }
 }

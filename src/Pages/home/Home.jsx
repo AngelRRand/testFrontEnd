@@ -3,6 +3,7 @@ import '../../Styles/Home.css'
 import ArticleContext from '../../Context/Article/ArticleContext.jsx';
 import Welcome from './View/Welcome.jsx';
 import Presentation from './View/Presentation.jsx';
+import Articles from './View/Articles';
 
 const Home = () => {
 
@@ -16,8 +17,11 @@ const Home = () => {
     <main className='containerHome'>
       
       <Welcome/>
+
       <Presentation/>
-    
+      
+      <Articles/>
+
     </main>
   )
 }
