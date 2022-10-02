@@ -23,7 +23,7 @@ const ArticleState = (props) => {
     const getLastArticles = async () =>{
         const res = await axios.get('https://servicepad-post-api.herokuapp.com/articles/')
         const lastDay = res.data.data
-        const sort = await lastDay.slice(lastDay.length-5).reverse()
+        const sort = await lastDay.slice(lastDay.length-4).reverse()
         console.log(sort, 'va')
         //console.log(res)
         dispatch({

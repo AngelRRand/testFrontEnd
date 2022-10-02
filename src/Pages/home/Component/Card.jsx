@@ -1,10 +1,14 @@
 import React from 'react'
 import '../../../Styles/HomeCard.css'
-const Card = ({author, img}) => {
+const Card = ({ title, author, content, img }) => {
   return (
     <div className='containerCard'>
-        <h3 className='nameCard'>{author}</h3>
-        <img className='imageCard' src={img}/>
+      <img className='imageCard' src={img} />
+      <div>
+        <span>{author}</span>
+        <h3 className='nameCard'>{title}</h3>
+        <p>{content}</p>
+      </div>
     </div>
   )
 }

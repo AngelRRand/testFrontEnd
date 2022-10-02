@@ -1,7 +1,7 @@
 import React from 'react'
 import Spinner from '../Component/Spinner'
 import Card from '../Component/Card'
-const Articles = ({articles, lastArticles}) => {
+const Articles = ({ articles, lastArticles }) => {
     return (
         <section className='containerLastArticles'>
             <div className='containerTextLastArticles'>
@@ -16,11 +16,17 @@ const Articles = ({articles, lastArticles}) => {
                 <div>
                     <div className='containerCards'>
                         {
-                            !lastArticles? 
-                                (<Spinner/> ) 
+                            !lastArticles ?
+                                (<Spinner />)
                                 :
-                                lastArticles.map( a =>{
-                                    return <Card author={a.author} img={a.image_url} key={a.id}/>
+                                lastArticles.map(a => {
+                                    return <Card
+                                        key={a.id}
+                                        title={a.title}
+                                        author={a.author}
+                                        img={a.image_url}
+                                        content={a.content}
+                                    />
                                 })
                         }
                     </div>

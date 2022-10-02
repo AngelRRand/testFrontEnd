@@ -93,13 +93,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5vh;
 }
 .containerTitleLastArticle h2{
     font-size: 3rem;
 }
 .containerCards{
-    display: flex;
-    
+    margin: 20px;
 }
 
 
@@ -186,4 +186,10 @@
     .containerTextLastArticles{
         margin: 15vh 5vw;
     }
+    .containerCards{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px ;
+    }
+    
 }

@@ -1,0 +1,15 @@
+.containerCard{
+    width: 90vw;
+}
+.imageCard{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 30vh;
+}
+
+@media screen and (min-width: 800px){
+    .containerCard{
+        width: 20vw;
+        
+    }
+}
