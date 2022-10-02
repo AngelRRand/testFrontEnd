@@ -14,7 +14,7 @@ p, span, a{
 }
 .btnNav {
   padding: 15px;
-  width: 13vw;
+  width: 30vw;
   border: none;
   border-radius: 40px;
   color: white;
@@ -26,4 +26,9 @@ p, span, a{
 }
 .btnNav:hover{
   filter: brightness(1.2);
+}
+@media screen and (min-width: 800px){
+  .btnNav{
+    width: 14vw;
+  }
 }

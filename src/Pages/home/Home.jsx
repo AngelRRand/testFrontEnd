@@ -1,8 +1,9 @@
 import React, { useEffect, useContext } from 'react'
 import '../../Styles/Home.css'
 import ArticleContext from '../../Context/Article/ArticleContext.jsx';
+import Welcome from './View/Welcome.jsx';
+import Presentation from './View/Presentation.jsx';
 
-import Presentation from './View/Presentation';
 const Home = () => {
 
   const { articles, getArticles } = useContext(ArticleContext)
@@ -12,10 +13,11 @@ const Home = () => {
   }, []);
 
   return (
-    <main >
-
+    <main className='containerHome'>
+      
+      <Welcome/>
       <Presentation/>
-
+    
     </main>
   )
 }
