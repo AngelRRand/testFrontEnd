@@ -55,9 +55,11 @@
 }
 .containerCardsPresentation{
     width: 90vw;
+    overflow: hidden;
 }
 .cardsPresentation{
     width: 90vw;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,6 +78,7 @@
 .cardsPresentation p{
     margin-top: 10px;
     text-align: center;
+    
 }
 
 
@@ -99,7 +102,9 @@
     font-size: 3rem;
 }
 .containerCards{
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -156,13 +161,13 @@
         width: 60vw;
     }
     .containerCardsPresentation{
-        height: 50vh;
         padding: 10px;
         display: flex;
         justify-content: space-around;
     }
     .cardsPresentation{
         width: 20vw;
+        height: auto;
         margin: 10px;
         align-items: flex-start;
     }
@@ -188,6 +193,7 @@
     }
     .containerCards{
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         margin: 0px ;
     }

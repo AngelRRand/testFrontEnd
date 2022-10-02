@@ -5,9 +5,9 @@ const Card = ({ title, author, content, img }) => {
     <div className='containerCard'>
       <img className='imageCard' src={img} />
       <div className='containerTextCard'>
-        <div>
+        <div className='textCard'>
           <span>{author}</span>
-          <h3 className='nameCard'>{title}</h3>
+          <h4 className='nameCard'>{title}</h4>
           <p>{content}</p>
         </div>
       </div>
