@@ -1,10 +1,12 @@
 import React from 'react';
 import '../../Styles/FooterStyles.css';
-import Facebook from '../../Assets/Networks/Facebook.svg';
-import Youtube from '../../Assets/Networks/Youtube.svg';
-import Twitter from '../../Assets/Networks/Twitter.svg';
-import Pinterest from '../../Assets/Networks/Pinterest.svg';
-import Instragram from '../../Assets/Networks/Instagram.svg';
+import { 
+  AiFillFacebook,
+  AiFillYoutube, 
+  AiOutlineTwitter, 
+  AiOutlineInstagram
+} from "react-icons/ai";
+import { RiPinterestFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
@@ -24,11 +26,11 @@ const Footer = () => {
                 <p >easybank</p>
               </div>
               <div className='netFooter'>
-                <img src={Facebook} alt="Facebook" />
-                <img src={Youtube} alt="Youtube" />
-                <img src={Twitter} alt="Twitter" />
-                <img src={Pinterest} alt="Pinterest" />
-                <img src={Instragram} alt="Instragram" />
+                <AiFillFacebook className='iconNet'/>
+                <AiFillYoutube className='iconNet'/>
+                <AiOutlineTwitter className='iconNet'/>
+                <RiPinterestFill className='iconNet'/>
+                <AiOutlineInstagram className='iconNet'/>
               </div>
             </div>
 
