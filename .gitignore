@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 .env
 src/Pages/home/Component/articles.json
+.vercel

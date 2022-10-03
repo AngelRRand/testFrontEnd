@@ -46,9 +46,6 @@
     margin: 5vh 0vh;
 }
 
-.textPresentation h2 {
-    text-align: center;
-}
 
 .textPresentation span {
     font-size: 1.2rem;
@@ -127,9 +124,11 @@
 .marginAddArticle {
     margin: 10vh 0vw;
 }
-.containerTitleArticle h2{
+
+.containerTitleArticle h2 {
     margin-bottom: 3vh;
 }
+
 .articlesPreviusText {
     margin-bottom: 5vh;
 }
@@ -137,7 +136,8 @@
 .containerArticlesList {
     margin-top: 5vh;
 }
-.centerForm{
+
+.centerForm {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,38 +153,50 @@
     border: 1px solid rgb(196, 196, 196);
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr repeat(2, 2fr) 1fr 0.3fr 0.1fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 1fr repeat(2, 1fr) 1fr 0.3fr 0.3fr;
+    grid-template-rows: repeat(7, 0.9fr);
     grid-column-gap: 0px;
-    grid-row-gap: 10px;
+    grid-row-gap: 0px;
     align-items: center;
 }
-.toplistArtPrevius{
+
+.toplistArtPrevius {
     font-weight: 600;
     font-size: 0.9rem;
 }
-.textCenterArt{
+
+.textCenterArt {
     text-align: center;
 }
-.containerListArtLast h4{
+
+.containerListArtLast h4 {
     text-align: center;
     padding: 10px;
+    font-size: 0.6rem;
 }
-.containerListArtLast p{
+
+.containerListArtLast p {
+    font-size: 0.5rem;
     padding: 10px;
+    height: auto
 }
-.containerListArtLast span{
+
+.containerListArtLast span {
     color: #31cf70;
     font-weight: 600;
     cursor: pointer;
+    font-size: 0.5rem;
 }
-.bgGray{
+
+.bgGray {
     background-color: #F4F5F7;
 }
-.bgWhite{
+
+.bgWhite {
     background-color: white;
 }
-.deletArticle{
+
+.deletArticle {
     color: crimson;
     cursor: pointer;
 }
@@ -264,4 +276,28 @@
         margin: 0px;
     }
 
+
+
+
+    .containerListArtLast {
+        padding: 1.5vh 1.5vw;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr repeat(2, 2fr) 1fr 0.3fr 0.1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px;
+        align-items: center;
+    }
+    .containerListArtLast p {
+        font-size: 1rem;
+    }
+    .containerListArtLast span {
+        font-size: 1rem;
+    }
+    .containerListArtLast h4 {
+        font-size: 1.2rem;
+    }
+    
 }

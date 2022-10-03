@@ -1,15 +1,10 @@
 .pagination{
     display: flex;
     flex-direction: row;
-    width: 100%;
     margin-top: 5vh;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }
 .centerPagination{
     display: flex;
-    
 }
 .arrow{
     display: flex;
@@ -20,20 +15,12 @@
     margin: 0px 15px;
 }
 .arrowPaginationPrev{
-    width: 100px;
-    cursor: pointer;
-    position: absolute;
-    left:20px;
-    text-align: center;
-    font-weight: 600;
+    width: 200px;
+    display: flex;
 }
 .arrowPaginationNext{
-    width: 100px;
-    cursor: pointer;
-    position: absolute;
-    text-align: center;
-    right:0px;
-    font-weight: 600;
+    width: 200px;
+    display: flex;
 }
 .containerPageNum{
     display: flex;
@@ -63,4 +50,30 @@
     font-weight: 800;
 }
 
-
+@media screen and (min-width: 800px){
+    .pagination{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .arrowPaginationPrev{
+        width: 100px;
+        cursor: pointer;
+        position: absolute;
+        left:20px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .arrowPaginationNext{
+        width: 100px;
+        cursor: pointer;
+        position: absolute;
+        text-align: center;
+        right:0px;
+        font-weight: 600;
+    }
+}

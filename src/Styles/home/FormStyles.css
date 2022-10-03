@@ -23,7 +23,7 @@
 }
 .divForm input{
     height: 5vh;
-    width: 40vw;
+    width: 80vw;
     border: #D1D5DB 1px solid;
     padding: 5px;
 }
@@ -34,4 +34,11 @@
 }
 .btnfrom{
     width: 100%;
+}
+
+
+@media screen and (min-width: 800px) {
+    .divForm input{
+        width: 40vw;
+    }
 }
