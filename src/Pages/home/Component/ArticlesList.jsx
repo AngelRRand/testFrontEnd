@@ -2,17 +2,17 @@ import React, { useEffect, useState, useContext } from 'react';
 import ReactPaginate from 'react-paginate';
 import ArticleContext from '../../../Context/Article/ArticleContext.jsx';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-import '../../../Styles/home/PaginationStyles.css'
-import json from './articles.json'
-import ArticlesListMap from './ArticlesListMap.jsx';
-function ArticlesList() {
-
-
-    const { articles, getArticles } = useContext(ArticleContext)
+import '../../../Styles/home/PaginationStyles.css';
+import Spinner from './Spinner.jsx';
+function ArticlesList({ a }) {
+    const { articles, getArticles, infoarticle, getInfoArticle } = useContext(ArticleContext)
     const [currentItems, setCurrentItems] = useState();
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
     const itemsPerPage = 6
+
+
+
     useEffect(() => {
         getArticles()
     }, []);
@@ -28,32 +28,73 @@ function ArticlesList() {
         const newOffset = (event.selected * itemsPerPage) % articles.length;
         setItemOffset(newOffset);
     };
-    let arrowleft = () =>{
+    let arrowleft = () => {
         return (
             <div className='arrow'>
-                <AiOutlineArrowLeft/>
+                <AiOutlineArrowLeft />
                 <p>Previous</p>
             </div>
         )
     }
-    let arrowrigth = () =>{
+    let arrowrigth = () => {
         return (
             <div className='arrow'>
                 <p>Next</p>
-                <AiOutlineArrowRight/>
+                <AiOutlineArrowRight />
             </div>
         )
     }
+
+    const getId = (as) => {
+        
+        const info = articles.filter(a => a.id === as)
+        //console.log(info)
+        getInfoArticle(info)
+    }
+    console.log(infoarticle)
     return (
         <>
-            <ArticlesListMap
-                currentItems={currentItems}
-            />
+            <div className='containerListArtLast'>
+                <div className='textCenterArt toplistArtPrevius'><p>AUTHOR NAME</p></div>
+                <div className='toplistArtPrevius'><p>TITLE</p></div>
+                <div className='toplistArtPrevius'><p>CONTENT</p></div>
+                <div className='toplistArtPrevius'><p>DATE</p></div>
+                <div></div>
+                {
+                    !currentItems ?
+                        <Spinner />
+                        :
+                        currentItems.map((p, index) => {
+                            let day = p.date.slice(0, 10)
+                            let par = null
+                            let inpar = null
+                            if (index % 2 === 0) {
+                                par = 'bgWhite'
+                            } else {
+                                inpar = 'bgGray'
+                            }
+                            return (
+                                <>
+                                    <h4 className={par === null ? inpar : par}>{p.author}</h4>
+                                    <p className={par === null ? inpar : par}>{p.title}</p>
+                                    <p className={par === null ? inpar : par}>{p.content}</p>
+                                    <p className={par === null ? inpar : par}>{day}</p>
+                                    <span
+                                        className={par === null ? inpar : par}
+                                        onClick={() => getId(p.id)}
+                                    >edit</span>
+                                </>
+                            )
+                        })
+                }
+            </div>
+
+
             <div className='centerPagination'>
                 <ReactPaginate
                     breakLabel="..."
                     nextLabel={arrowrigth()}
-                    previousLabel={arrowleft() }
+                    previousLabel={arrowleft()}
                     onPageChange={handlePageClick}
                     pageRangeDisplayed={3}
                     pageCount={pageCount}

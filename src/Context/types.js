@@ -1,3 +1,4 @@
 export const GET_ARTICLES = 'GET_ARTICLES'
-export const GET_LAST_ARTICLES = 'GET_LAST_ARTICLES'
+export const SAVE_ARTICLE = 'SAVE_ARTICLE'
 export const POST_ARTICLES = 'POST_ARTICLES'
+export const PUT_ARTICLE = 'PUT_ARTICLE'
