@@ -1,4 +1,4 @@
-/* Component Welcome */
+/******************************* Component Welcome *******************************/
 .containerHome {
     background-color: #F4F5F7;
 }
@@ -28,16 +28,13 @@
     flex-direction: column;
 }
 
-.centertextWelcome h2 {
-    font-size: 3rem;
-}
 
 .text {
     margin: 20px 0px;
 }
 
 
-/* Component Presentation*/
+/****************************** Component Presentation *******************************/
 
 .containerPresentation {
     background-color: #FAFAFA;
@@ -50,7 +47,6 @@
 }
 
 .textPresentation h2 {
-    font-size: 3rem;
     text-align: center;
 }
 
@@ -95,7 +91,7 @@
 }
 
 
-/* Component Articles */
+/****************************** Component LastArticles ******************************************/
 
 
 
@@ -111,22 +107,22 @@
     margin-bottom: 5vh;
 }
 
-.containerTitleLastArticle h2 {
-    font-size: 3rem;
-}
 
 .containerCards {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 
+/****************************** Component Articles ******************************************/
 
 
 
-
-
+.containerArticles{
+    background-color: #fa8181;
+}
 
 
 
@@ -145,7 +141,6 @@
         justify-content: space-between;
     }
 
-    /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
     .containertextWelcome {
         width: 50vw;
     }

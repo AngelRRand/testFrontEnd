@@ -14,6 +14,9 @@ h1, h2, h3, h4, h5, h6{
 p, span, a{
   color: rgb(116, 116, 116);
 }
+h2{
+  font-size: 3rem;
+}
 .btnNav {
   padding: 10px;
   width: 30vw;
