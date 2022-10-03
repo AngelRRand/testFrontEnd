@@ -1,5 +1,5 @@
 import React, { useEffect, useContext, useState } from 'react'
-import '../../Styles/Home.css'
+import '../../Styles/home/Home.css'
 import ArticleContext from '../../Context/Article/ArticleContext.jsx';
 import Welcome from './View/Welcome.jsx';
 import Presentation from './View/Presentation.jsx';
@@ -9,9 +9,10 @@ import Articles from './View/Articles';
 const Home = () => {
 
   const [show, setShow] = useState(false);
-  const { articles, lastArticles, getArticles, getLastArticles } = useContext(ArticleContext)
+  const { lastArticles, getArticles, getLastArticles } = useContext(ArticleContext)
   useEffect(() => {
     getLastArticles()
+    getArticles()
   }, []);
   return (
     <main className='containerHome'>
@@ -26,7 +27,7 @@ const Home = () => {
           <></>
         )
       }
-      <LastArticles articles={articles} lastArticles={lastArticles} show={show} setShow={setShow}/>
+      <LastArticles lastArticles={lastArticles} show={show} setShow={setShow}/>
 
     </main>
   )

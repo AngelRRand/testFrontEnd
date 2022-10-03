@@ -1,0 +1,14 @@
+.pagination{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
+.pageNum{
+    font-weight: 600;
+}
+.active{
+    color: #84E1A7;
+}
+
+

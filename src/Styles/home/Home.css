@@ -120,16 +120,50 @@
 
 
 
-.containerArticles{
-    background-color: #ffffff;
+.containerArticles {
+    background-color: #F9F9F9;
 }
 
+.containerArticlesPrevius {
+    margin: 10vh 0vw;
+}
 
+.articlesPreviusText {
+    margin-bottom: 5vh;
+}
 
+.containerArticlesList {
+    margin-top: 5vh;
+}
 
-
-
-
+.containerListArtLast {
+    padding: 1.5vh 1.5vw;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 2fr) 1fr 0.3fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    align-items: center;
+}
+.toplistArtPrevius{
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.textCenterArt{
+    text-align: center;
+}
+.containerListArtLast h4{
+    text-align: center;
+}
+.containerListArtLast p{
+    padding: 10px;
+}
+.editTextList{
+    color: #31cf70;
+    font-weight: 600;
+}
 
 
 
@@ -159,7 +193,7 @@
         font-size: 4rem;
         font-weight: 600;
     }
-    
+
 
     .textPresentation h2 {
         font-size: 3rem;

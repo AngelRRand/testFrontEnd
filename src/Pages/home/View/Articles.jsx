@@ -17,16 +17,15 @@ const Articles = () => {
             </div>
           </div>
 
-          <div>
+          <div className='containerArticlesPrevius'>
             <div>
-              <h2>Previous Articles</h2>
-              <span>Review and edit previous blog posts published on to the homepage.</span>
+              <h2 className='articlesPreviusText'>Previous Articles</h2>
+              <span className='articlesPreviusText'>Review and edit previous blog posts published on to the homepage.</span>
             </div>
-
-            <ArticlesList  />
-            
+            <div className='containerArticlesList'>
+              <ArticlesList />
+            </div>
           </div>
-
         </div>
       </div>
     </div>

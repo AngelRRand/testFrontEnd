@@ -45,5 +45,6 @@
     .containerCard{
         width: 20vw;
         margin: 0vh 0px;
+        height: 70vh;
     }
 }
