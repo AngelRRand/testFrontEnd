@@ -9,7 +9,6 @@ function ArticlesList() {
 
 
     const { articles, getArticles } = useContext(ArticleContext)
-    const { data } = json
     const [currentItems, setCurrentItems] = useState();
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
@@ -20,13 +19,13 @@ function ArticlesList() {
 
     useEffect(() => {
         const endOffset = itemOffset + itemsPerPage;
-        setCurrentItems(data.slice(itemOffset, endOffset));
-        setPageCount(Math.ceil(data.length / itemsPerPage));
-    }, [itemOffset, itemsPerPage, data]);
+        setCurrentItems(articles.slice(itemOffset, endOffset));
+        setPageCount(Math.ceil(articles.length / itemsPerPage));
+    }, [itemOffset, itemsPerPage, articles]);
 
 
     const handlePageClick = (event) => {
-        const newOffset = (event.selected * itemsPerPage) % data.length;
+        const newOffset = (event.selected * itemsPerPage) % articles.length;
         setItemOffset(newOffset);
     };
     let arrowleft = () =>{

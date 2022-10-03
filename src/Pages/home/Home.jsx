@@ -9,11 +9,14 @@ import Articles from './View/Articles';
 const Home = () => {
 
   const [show, setShow] = useState(false);
-  const { lastArticles, getArticles, getLastArticles } = useContext(ArticleContext)
+  const { articles, getArticles } = useContext(ArticleContext)
+
   useEffect(() => {
-    getLastArticles()
+    
     getArticles()
-  }, []);
+
+  }, [articles]);
+
   return (
     <main className='containerHome'>
       
@@ -27,7 +30,7 @@ const Home = () => {
           <></>
         )
       }
-      <LastArticles lastArticles={lastArticles} show={show} setShow={setShow}/>
+      <LastArticles articles={articles} show={show} setShow={setShow}/>
 
     </main>
   )

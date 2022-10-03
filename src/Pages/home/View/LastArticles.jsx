@@ -1,7 +1,9 @@
 import React from 'react'
 import Spinner from '../Component/Spinner'
 import Card from '../Component/Card'
-const LastArticles = ({ articles, lastArticles, show, setShow }) => {
+const LastArticles = ({ articles, show, setShow }) => {
+
+    const lastArticles = articles.slice(0, 4);
     return (
         <section className='containerLastArticles'>
             <div className='marginContainers'>
