@@ -184,6 +184,10 @@
 .bgWhite{
     background-color: white;
 }
+.deletArticle{
+    color: crimson;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 800px) {
     .containerWelcome {

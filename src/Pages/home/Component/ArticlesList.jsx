@@ -5,7 +5,7 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineClose } from "react-i
 import '../../../Styles/home/PaginationStyles.css';
 import Spinner from './Spinner.jsx';
 function ArticlesList() {
-    const { articles, getArticles, getInfoArticle, deletArticle } = useContext(ArticleContext)
+    const { articles, getArticles, getInfoArticle, deletArticle, infoArticle } = useContext(ArticleContext)
     const [currentItems, setCurrentItems] = useState();
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
@@ -13,7 +13,7 @@ function ArticlesList() {
 
     useEffect(() => {
         getArticles()
-    }, []);
+    }, [articles, infoArticle]);
 
     useEffect(() => {
         const endOffset = itemOffset + itemsPerPage;
@@ -80,7 +80,9 @@ function ArticlesList() {
                                         className={par === null ? inpar : par}
                                         onClick={() => getId(p.id)}
                                     >edit</span>
-                                    <AiOutlineClose onClick={()=>deletArticle(p.id)}/>
+                                    <AiOutlineClose 
+                                        className='deletArticle'
+                                        onClick={()=>deletArticle(p.id)}/>
                                 </>
                             )
                         })
