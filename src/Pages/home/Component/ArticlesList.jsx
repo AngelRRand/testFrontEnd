@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useContext } from 'react';
 import ReactPaginate from 'react-paginate';
 import ArticleContext from '../../../Context/Article/ArticleContext.jsx';
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineClose } from "react-icons/ai";
 import '../../../Styles/home/PaginationStyles.css';
 import Spinner from './Spinner.jsx';
 function ArticlesList() {
-    const { articles, getArticles, getInfoArticle } = useContext(ArticleContext)
+    const { articles, getArticles, getInfoArticle, deletArticle } = useContext(ArticleContext)
     const [currentItems, setCurrentItems] = useState();
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
@@ -47,6 +47,7 @@ function ArticlesList() {
         const info = articles.filter(a => a.id === idArticle)
         getInfoArticle(info)
     }
+
     return (
         <>
             <div className='containerListArtLast'>
@@ -54,6 +55,7 @@ function ArticlesList() {
                 <div className='toplistArtPrevius'><p>TITLE</p></div>
                 <div className='toplistArtPrevius'><p>CONTENT</p></div>
                 <div className='toplistArtPrevius'><p>DATE</p></div>
+                <div></div>
                 <div></div>
                 {
                     !currentItems ?
@@ -78,6 +80,7 @@ function ArticlesList() {
                                         className={par === null ? inpar : par}
                                         onClick={() => getId(p.id)}
                                     >edit</span>
+                                    <AiOutlineClose onClick={()=>deletArticle(p.id)}/>
                                 </>
                             )
                         })

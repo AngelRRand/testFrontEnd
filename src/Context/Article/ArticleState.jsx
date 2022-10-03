@@ -44,6 +44,15 @@ const ArticleState = (props) => {
             console.log(error)
         }
     }
+    const deletArticle = async (id) =>{
+        try {
+            const res = await axios.delete(`https://servicepad-post-api.herokuapp.com/articles/${id}`)
+            console.log(res, 'res delete')
+            return res
+        } catch (error) {
+            console.log(error)
+        }
+    }
     const getInfoArticle = (payload) =>{
         try {
             dispatch({
@@ -70,6 +79,7 @@ const ArticleState = (props) => {
             getArticles,
             postArticle,
             putArticle,
+            deletArticle,
             getInfoArticle,
             deletInfoArticle
         }}>
