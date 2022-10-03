@@ -20,10 +20,12 @@
     height: 5vh;
     width: 40vw;
     border: #D1D5DB 1px solid;
+    padding: 5px;
 }
 .divForm textarea{
     height: 30vh;
     border: #D1D5DB 1px solid;
+    padding: 5px;
 }
 .btnfrom{
     width: 100%;
