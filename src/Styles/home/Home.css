@@ -124,7 +124,7 @@
     background-color: #F9F9F9;
 }
 
-.containerArticlesPrevius {
+.marginAddArticle {
     margin: 10vh 0vw;
 }
 
@@ -135,6 +135,16 @@
 .containerArticlesList {
     margin-top: 5vh;
 }
+.centerForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
 
 .containerListArtLast {
     padding: 1.5vh 1.5vw;
@@ -164,6 +174,7 @@
 .containerListArtLast span{
     color: #31cf70;
     font-weight: 600;
+    cursor: pointer;
 }
 .bgGray{
     background-color: #F4F5F7;

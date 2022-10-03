@@ -1,4 +1,5 @@
 import React from 'react'
+import ArticlesFrom from '../Component/ArticlesFrom'
 import ArticlesList from '../Component/ArticlesList'
 
 const Articles = () => {
@@ -7,17 +8,19 @@ const Articles = () => {
       <div className='marginContainers'>
         <div>
 
-          <div>
+          <div >
             <div>
               <h2>Add New Blog Article</h2>
               <span>Publish a new blog article to feature in the Easybank homepage.</span>
             </div>
-            <div>
-              <p>Form</p>
+            <div className='marginAddArticle formMargin'>
+              <div className='centerForm'>
+                <ArticlesFrom />
+              </div>
             </div>
           </div>
 
-          <div className='containerArticlesPrevius'>
+          <div className='marginAddArticle'>
             <div>
               <h2 className='articlesPreviusText'>Previous Articles</h2>
               <span className='articlesPreviusText'>Review and edit previous blog posts published on to the homepage.</span>

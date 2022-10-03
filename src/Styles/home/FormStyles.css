@@ -1,0 +1,28 @@
+.containerFormArticles{
+    background-color: rgb(247, 247, 247);
+    overflow: hidden;
+    box-shadow: -1px 2px 2px -1px #0000000F;
+    margin-bottom: 10px;
+}
+.divForm{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+.divForm label{
+    color: #2D314E;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.divForm input{
+    height: 5vh;
+    width: 40vw;
+    border: #D1D5DB 1px solid;
+}
+.divForm textarea{
+    height: 30vh;
+    border: #D1D5DB 1px solid;
+}
+.btnfrom{
+    width: 100%;
+}
