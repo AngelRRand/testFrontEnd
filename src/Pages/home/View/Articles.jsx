@@ -1,4 +1,5 @@
 import React from 'react'
+import ArticlesList from '../Component/ArticlesList'
 
 const Articles = () => {
   return (
@@ -21,6 +22,9 @@ const Articles = () => {
               <h2>Previous Articles</h2>
               <span>Review and edit previous blog posts published on to the homepage.</span>
             </div>
+
+            <ArticlesList  />
+            
           </div>
 
         </div>

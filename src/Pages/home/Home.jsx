@@ -11,10 +11,8 @@ const Home = () => {
   const [show, setShow] = useState(false);
   const { articles, lastArticles, getArticles, getLastArticles } = useContext(ArticleContext)
   useEffect(() => {
-    getArticles()
     getLastArticles()
   }, []);
-  //console.log(articles)
   return (
     <main className='containerHome'>
       
