@@ -37,7 +37,8 @@ const ArticleState = (props) => {
     }
     const putArticle = async (payload, id) =>{
         try {
-            const res = await axios.post(`https://servicepad-post-api.herokuapp.com/articles/${id}`, payload)
+            const res = await axios.put(`https://servicepad-post-api.herokuapp.com/articles/${id}`, payload)
+            console.log(res, 'res put')
             return res
         } catch (error) {
             console.log(error)

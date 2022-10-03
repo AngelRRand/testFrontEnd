@@ -75,14 +75,17 @@ const ArticlesFrom = () => {
                     title: "",
                     content: "",
                 });
+                return
+            }else{
+                alert("Your article has been created successfully");
+                postArticle(input);
+                setInput({
+                    author: "",
+                    title: "",
+                    content: "",
+                });
+                return
             }
-            alert("Your article has been created successfully");
-            postArticle(input);
-            setInput({
-                author: "",
-                title: "",
-                content: "",
-            });
         } else {
             return alert("It was not possible to create the dog.");
         }

@@ -9,13 +9,13 @@ import Articles from './View/Articles';
 const Home = () => {
 
   const [show, setShow] = useState(false);
-  const { articles, getArticles } = useContext(ArticleContext)
+  const { articles, getArticles, infoArticle } = useContext(ArticleContext)
 
   useEffect(() => {
     
     getArticles()
 
-  }, [articles]);
+  }, [articles, infoArticle]);
 
   return (
     <main className='containerHome'>
