@@ -1,8 +1,8 @@
-import React from 'react'
-import Icon1 from '../../../Assets/Icon1.svg'
-import Icon2 from '../../../Assets/Icon2.svg'
-import Icon3 from '../../../Assets/Icon3.svg'
-import Icon4 from '../../../Assets/Icon4.svg'
+import React from 'react';
+import Icon1 from '../../../Assets/Icon1.svg';
+import Icon2 from '../../../Assets/Icon2.svg';
+import Icon3 from '../../../Assets/Icon3.svg';
+import Icon4 from '../../../Assets/Icon4.svg';
 
 
 const Presentation = () => {

@@ -58,8 +58,8 @@ function ArticlesList() {
                 <div></div>
                 <div></div>
                 {
-                    !currentItems ?
-                        <Spinner />
+                    currentItems === undefined ?
+                        (<Spinner />)
                         :
                         currentItems.map((p, index) => {
                             let day = p.date.slice(0, 10)
@@ -80,9 +80,9 @@ function ArticlesList() {
                                         className={par === null ? inpar : par}
                                         onClick={() => getId(p.id)}
                                     >edit</span>
-                                    <AiOutlineClose 
+                                    <AiOutlineClose
                                         className='deletArticle'
-                                        onClick={()=>deletArticle(p.id)}/>
+                                        onClick={() => deletArticle(p.id)} />
                                 </>
                             )
                         })

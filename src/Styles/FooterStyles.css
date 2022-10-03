@@ -1,5 +1,6 @@
 .containerFooter {
     background-color: #2D314E;
+    height: 70vh;
 }
 
 .containerContentFooter {
@@ -100,6 +101,11 @@
 }
 
 @media screen and (min-width: 800px) {
+    .containerFooter {
+        background-color: #2D314E;
+        height: auto
+    }
+    
     .containerLeftFooter {
         width: 45vw;
         flex-direction: row;

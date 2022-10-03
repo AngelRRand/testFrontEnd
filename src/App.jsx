@@ -4,10 +4,10 @@ import { Route, Routes } from 'react-router-dom';
 //Component
 import Home from './Pages/home/Home.jsx';
 import Nav from './Pages/nav/Nav.jsx';
+import Footer from './Pages/footer/Footer';
 
 //Context
 import ArticleState from './Context/Article/ArticleState';
-import Footer from './Pages/footer/Footer';
 function App() {
 
 

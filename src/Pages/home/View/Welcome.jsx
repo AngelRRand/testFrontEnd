@@ -1,7 +1,7 @@
-import React from 'react'
-import ImageHome from '../../../Assets/Phones.svg'
-import Vector1 from '../../../Assets/Vector1.png'
-import Vector2 from '../../../Assets/Vector2.png'
+import React from 'react';
+import ImageHome from '../../../Assets/Phones.svg';
+import Vector1 from '../../../Assets/Vector1.png';
+import Vector2 from '../../../Assets/Vector2.png';
 const Welcome = () => {
     return (
         <section className='containerWelcome'>

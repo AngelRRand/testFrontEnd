@@ -1,6 +1,4 @@
 .container-loading{
-    width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #333;
+    background-color: #31cf70;
     -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
     animation: sk-foldCubeAngle 2.4s infinite linear both;
     -webkit-transform-origin: 100% 100%;

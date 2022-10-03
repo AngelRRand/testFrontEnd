@@ -1,5 +1,5 @@
-import React from 'react'
-import '../../../Styles/home/HomeCard.css'
+import React from 'react';
+import '../../../Styles/home/HomeCard.css';
 const Card = ({ title, author, content, img }) => {
   return (
     <div className='containerCard'>

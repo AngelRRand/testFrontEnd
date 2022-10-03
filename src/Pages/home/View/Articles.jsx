@@ -1,7 +1,6 @@
-import React, {useContext, useState} from 'react'
-import ArticlesFrom from '../Component/ArticlesFrom'
-import ArticlesList from '../Component/ArticlesList'
-import ArticleContext from '../../../Context/Article/ArticleContext';
+import React, {useContext, useState} from 'react';
+import ArticlesFrom from '../Component/ArticlesFrom';
+import ArticlesList from '../Component/ArticlesList';
 const Articles = () => {
 
 
