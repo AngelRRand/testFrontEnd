@@ -14,7 +14,7 @@ const ArticleState = (props) => {
 
     const getArticles = async () => {
         try {
-            const res = await axios.get('https://servicepad-post-api.herokuapp.com/articles/')
+            const res = await axios.get('https://servicepad-post-api.herokuapp.com/articles/').reverse()
             dispatch({
                 type: GET_ARTICLES,
                 payload: res.data.data
@@ -31,7 +31,6 @@ const ArticleState = (props) => {
             const res = await axios.get('https://servicepad-post-api.herokuapp.com/articles/')
             const lastDay = res.data.data
             const sort = await lastDay.slice(lastDay.length - 4).reverse()
-            //console.log(res)
             dispatch({
                 type: GET_LAST_ARTICLES,
                 payload: sort
@@ -39,14 +38,25 @@ const ArticleState = (props) => {
         } catch (error) {
             console.log(error)
         }
+    }
 
+    const postArticle = async (payload) => {
+        
+        try {
+            const res = await axios.post('https://servicepad-post-api.herokuapp.com/articles/', payload)
+            console.log(res)
+            return res
+        } catch (error) {
+            console.log(error)
+        }
     }
     return (
         <ArticleContext.Provider value={{
             articles: state.articles,
             lastArticles: state.lastArticles,
             getArticles,
-            getLastArticles
+            getLastArticles,
+            postArticle
         }}>
             {props.children}
         </ArticleContext.Provider>

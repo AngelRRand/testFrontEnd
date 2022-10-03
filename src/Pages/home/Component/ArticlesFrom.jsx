@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import './../../../Styles/home/FormStyles.css'
-
+import ArticleContext from '../../../Context/Article/ArticleContext';
 function validateForm(input) {
     let errors = {};
 
@@ -39,7 +39,7 @@ function validateForm(input) {
 
 
 const ArticlesFrom = () => {
-
+    const { postArticle } = useContext(ArticleContext)
     const [error, setErrors] = useState('');
     const [input, setInput] = useState({
         author: '',
@@ -50,7 +50,21 @@ const ArticlesFrom = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        if (
+            !error.author &&
+            !error.title &&
+            !error.content
+        ){
+            alert("Your article has been created successfully");
+            postArticle(input);
+            setInput({
+                author: "",
+                title: "",
+                content: "",
+            });
+        } else {
+            return alert("It was not possible to create the dog.");
+        }
     };
     const handleChange = (e) => {
         setInput({
@@ -104,7 +118,7 @@ const ArticlesFrom = () => {
                     type="text"
                     value={input.content}
                     name='content'
-                    placeholder='Receta nueva'
+                    placeholder='Pan, huevo, pan , huevo'
                     id='content'
                     onChange={(e) => handleChange(e)}
                 />

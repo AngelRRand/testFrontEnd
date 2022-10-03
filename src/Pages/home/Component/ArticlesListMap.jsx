@@ -13,7 +13,6 @@ const ArticlesListMap = ({currentItems}) => {
                     <Spinner />
                     :
                     currentItems.map((p, index) => {
-                        console.log(index)
                         let day = p.date.slice(0, 10)
                         let par = null
                         let inpar = null
