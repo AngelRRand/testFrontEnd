@@ -1,10 +1,53 @@
 .pagination{
     display: flex;
     flex-direction: row;
-    list-style: none;
-
+    width: 100%;
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.centerPagination{
+    display: flex;
+    
+}
+.arrowPaginationPrev{
+    width: 100px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    position: absolute;
+    left:20px;
+    text-align: center;
+}
+.arrowPaginationNext{
+    width: 100px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    right:10px;
+}
+.containerPageNum{
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
 }
 .pageNum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-weight: 600;
+}
+.pageNum:focus{
+    border-top: 3px solid #84E1A7;
+}
+.breakPagination{
+    margin: 0px 10px;
+    text-align: center;
     font-weight: 600;
 }
 .active{
