@@ -1,14 +1,14 @@
 import React, { useReducer } from 'react'
 import ArticleReducer from './ArticleReducer'
 import ArticleContext from './ArticleContext'
-import { GET_ARTICLES, SAVE_ARTICLE } from '../types'
+import { GET_ARTICLES, SAVE_ARTICLE, DELET_INFO_ARTICLE } from '../types'
 import axios from 'axios'
 
 const ArticleState = (props) => {
 
     const initialState = {
         articles: [],
-        infoarticle: []
+        infoArticle: []
     }
 
     const [state, dispatch] = useReducer(ArticleReducer, initialState)
@@ -44,7 +44,6 @@ const ArticleState = (props) => {
         }
     }
     const getInfoArticle = (payload) =>{
-        console.log(payload, 'desde state')
         try {
             dispatch({
                 type: SAVE_ARTICLE,
@@ -54,14 +53,24 @@ const ArticleState = (props) => {
             console.log(error)
         }
     }
+    const deletInfoArticle = () =>{
+        try {
+            dispatch({
+                type: DELET_INFO_ARTICLE
+            })
+        } catch (error) {
+            console.log(error)
+        }
+    }
     return (
         <ArticleContext.Provider value={{
             articles: state.articles,
-            infoarticle: state.infoarticle,
+            infoArticle: state.infoArticle,
             getArticles,
             postArticle,
             putArticle,
-            getInfoArticle
+            getInfoArticle,
+            deletInfoArticle
         }}>
             {props.children}
         </ArticleContext.Provider>

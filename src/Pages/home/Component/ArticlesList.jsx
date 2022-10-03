@@ -4,14 +4,12 @@ import ArticleContext from '../../../Context/Article/ArticleContext.jsx';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import '../../../Styles/home/PaginationStyles.css';
 import Spinner from './Spinner.jsx';
-function ArticlesList({ a }) {
-    const { articles, getArticles, infoarticle, getInfoArticle } = useContext(ArticleContext)
+function ArticlesList() {
+    const { articles, getArticles, getInfoArticle } = useContext(ArticleContext)
     const [currentItems, setCurrentItems] = useState();
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
     const itemsPerPage = 6
-
-
 
     useEffect(() => {
         getArticles()
@@ -45,13 +43,10 @@ function ArticlesList({ a }) {
         )
     }
 
-    const getId = (as) => {
-        
-        const info = articles.filter(a => a.id === as)
-        //console.log(info)
+    const getId = (idArticle) => {
+        const info = articles.filter(a => a.id === idArticle)
         getInfoArticle(info)
     }
-    console.log(infoarticle)
     return (
         <>
             <div className='containerListArtLast'>

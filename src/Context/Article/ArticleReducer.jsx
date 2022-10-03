@@ -1,4 +1,4 @@
-import { GET_ARTICLES, POST_ARTICLES, PUT_ARTICLE, SAVE_ARTICLE } from "../types";
+import { GET_ARTICLES, POST_ARTICLES, PUT_ARTICLE, SAVE_ARTICLE, DELET_INFO_ARTICLE } from "../types";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (state, action) => {
@@ -21,7 +21,12 @@ export default (state, action) => {
     case SAVE_ARTICLE:
       return {
         ...state,
-        infoarticle: payload
+        infoArticle: payload
+      }
+    case DELET_INFO_ARTICLE:
+      return {
+        ...state,
+        infoArticle: []
       }
     default:
       return state;

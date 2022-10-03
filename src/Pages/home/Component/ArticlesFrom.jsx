@@ -39,14 +39,25 @@ function validateForm(input) {
 
 
 const ArticlesFrom = () => {
-    const { postArticle } = useContext(ArticleContext)
+    const { postArticle, infoArticle, putArticle, deletInfoArticle} = useContext(ArticleContext)
     const [error, setErrors] = useState('');
     const [input, setInput] = useState({
         author: '',
         title: '',
         content: ''
     })
+    useEffect(() => {
 
+        if(infoArticle.length > 0){
+            //let {author} = infoArticle
+            setInput({
+                author: infoArticle[0].author,
+                title: infoArticle[0].title,
+                content: infoArticle[0].content,
+            })
+
+        }
+    }, [infoArticle]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -55,6 +66,16 @@ const ArticlesFrom = () => {
             !error.title &&
             !error.content
         ){
+            if(infoArticle.length > 0){
+                alert("Your article has been update successfully");
+                putArticle(input, infoArticle[0].id)
+                deletInfoArticle()
+                setInput({
+                    author: "",
+                    title: "",
+                    content: "",
+                });
+            }
             alert("Your article has been created successfully");
             postArticle(input);
             setInput({
@@ -80,6 +101,7 @@ const ArticlesFrom = () => {
     };
 
     return (
+        <>
         <form onSubmit={(e) => handleSubmit(e)} className='containerFormArticles'>
             <div className='divForm'>
                 <div className='labelSpanForm'>
@@ -126,9 +148,10 @@ const ArticlesFrom = () => {
             <input
                 type="submit"
                 className='btnNav btnfrom'
-                value='Request Invite'
+                value={infoArticle.length > 0 ? 'Edit' : 'Save'}
             />
         </form>
+        </>
     )
 }
 

@@ -5,13 +5,6 @@ import ArticleContext from '../../../Context/Article/ArticleContext';
 const Articles = () => {
 
 
-  const { articles } = useContext(ArticleContext)
-  const [article, setArticle] = useState();
-    
-  const getInfoArticle = (id) => {
-    const info = articles.filter(a => a.id === id)
-    setArticle(info)
-  }
 
   return (
     <div className='containerArticles'>
@@ -25,7 +18,7 @@ const Articles = () => {
             </div>
             <div className='marginAddArticle formMargin'>
               <div className='centerForm'>
-                <ArticlesFrom getInfoArticle={getInfoArticle}/>
+                <ArticlesFrom />
               </div>
             </div>
           </div>
@@ -36,7 +29,7 @@ const Articles = () => {
               <span className='articlesPreviusText'>Review and edit previous blog posts published on to the homepage.</span>
             </div>
             <div className='containerArticlesList'>
-              <ArticlesList article={article}/>
+              <ArticlesList/>
             </div>
           </div>
         </div>
