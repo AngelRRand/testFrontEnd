@@ -36,10 +36,8 @@ function validateForm(input) {
     return errors;
 }
 
-
-
 const ArticlesFrom = () => {
-    const { postArticle, infoArticle, putArticle, deletInfoArticle} = useContext(ArticleContext)
+    const { postArticle, infoArticle, putArticle, deletInfoArticle, getArticles} = useContext(ArticleContext)
     const [error, setErrors] = useState('');
     const [input, setInput] = useState({
         author: '',
@@ -70,6 +68,7 @@ const ArticlesFrom = () => {
                 alert("Your article has been update successfully");
                 putArticle(input, infoArticle[0].id)
                 deletInfoArticle()
+                getArticles()
                 setInput({
                     author: "",
                     title: "",
@@ -79,6 +78,7 @@ const ArticlesFrom = () => {
             }else{
                 alert("Your article has been created successfully");
                 postArticle(input);
+                getArticles()
                 setInput({
                     author: "",
                     title: "",
