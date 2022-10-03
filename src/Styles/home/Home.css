@@ -121,13 +121,15 @@
 
 
 .containerArticles {
-    background-color: #F9F9F9;
+    background-color: #f3f3f3;
 }
 
 .marginAddArticle {
     margin: 10vh 0vw;
 }
-
+.containerTitleArticle h2{
+    margin-bottom: 3vh;
+}
 .articlesPreviusText {
     margin-bottom: 5vh;
 }

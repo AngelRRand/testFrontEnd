@@ -3,6 +3,8 @@
     overflow: hidden;
     box-shadow: -1px 2px 2px -1px #0000000F;
     margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 2vh;
 }
 .divForm{
     display: flex;

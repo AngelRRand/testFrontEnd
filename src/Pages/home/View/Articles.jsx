@@ -9,7 +9,7 @@ const Articles = () => {
         <div>
 
           <div >
-            <div>
+            <div className='containerTitleArticle'>
               <h2>Add New Blog Article</h2>
               <span>Publish a new blog article to feature in the Easybank homepage.</span>
             </div>
