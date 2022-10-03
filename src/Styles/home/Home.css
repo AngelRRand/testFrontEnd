@@ -156,6 +156,7 @@
 }
 .containerListArtLast h4{
     text-align: center;
+    padding: 10px;
 }
 .containerListArtLast p{
     padding: 10px;
@@ -164,8 +165,12 @@
     color: #31cf70;
     font-weight: 600;
 }
-
-
+.bgGray{
+    background-color: #F4F5F7;
+}
+.bgWhite{
+    background-color: white;
+}
 
 @media screen and (min-width: 800px) {
     .containerWelcome {

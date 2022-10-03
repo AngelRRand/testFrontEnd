@@ -42,18 +42,21 @@ function ArticlesList() {
                         <Spinner />
                         :
                         currentItems.map((p, index) => {
-                            
+                            console.log(index)
                             let day = p.date.slice(0, 10)
-
-                            if(2 % index === 0){
-
+                            let par = null
+                            let inpar= null
+                            if(index % 2 === 0){
+                                par = 'bgWhite'
+                            }else{
+                                inpar = 'bgGray'
                             }
                             return (
                                 <>
-                                    <h4 className=''>{p.author}</h4>
-                                    <p className=''>{p.title}</p>
-                                    <p className=''>{p.content}</p>
-                                    <p className=''>{day}</p>
+                                    <h4 className={par === null? inpar : par}>{p.author}</h4>
+                                    <p className={par === null? inpar : par}>{p.title}</p>
+                                    <p className={par === null? inpar : par}>{p.content}</p>
+                                    <p className={par === null? inpar : par}>{day}</p>
                                     <p className='editTextList'>edit</p>
                                 </>
                             )
