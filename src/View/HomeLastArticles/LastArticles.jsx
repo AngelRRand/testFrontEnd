@@ -6,7 +6,6 @@ const LastArticles = ({ articles, show, setShow }) => {
     const lastArticles = articles.slice(0, 4);
     return (
         <section className='containerLastArticles'>
-            <div className='marginContainers'>
                 <div className='containerTitleLastArticle'>
                     <div>
                         <h2>Latest Articles</h2>
@@ -33,7 +32,6 @@ const LastArticles = ({ articles, show, setShow }) => {
                         }
                     </div>
                 </div>
-            </div>
         </section>
     )
 }

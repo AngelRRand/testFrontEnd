@@ -8,7 +8,6 @@ import Icon4 from '../../Assets/Icon4.svg';
 const Presentation = () => {
     return (
         <section className='containerPresentation'>
-            <div className='marginContainers'>
                 <div className='textPresentation'>
                     <h2>Why choose Easybank?</h2>
                 </div>
@@ -49,7 +48,6 @@ const Presentation = () => {
                         <p>Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.  </p>
                     </div>
                 </div>
-            </div>
         </section>
     )
 }

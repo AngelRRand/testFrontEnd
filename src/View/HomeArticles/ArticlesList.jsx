@@ -1,11 +1,18 @@
 import React, { useEffect, useState, useContext } from 'react';
 import ReactPaginate from 'react-paginate';
 import ArticleContext from '../../Context/Article/ArticleContext.jsx';
-import { AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import '../../Styles/home/PaginationStyles.css';
-import Spinner from '../../Component/Spinner.jsx';
+
+import ArticlesListMap from './ArticlesListMap.jsx';
 function ArticlesList() {
-    const { articles, getArticles, getInfoArticle, deletArticle, infoArticle } = useContext(ArticleContext)
+
+    const { 
+        articles, 
+        getArticles, 
+        getInfoArticle, 
+        deletArticle, 
+        infoArticle } = useContext(ArticleContext)
     const [currentItems, setCurrentItems] = useState();
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
@@ -26,6 +33,12 @@ function ArticlesList() {
         const newOffset = (event.selected * itemsPerPage) % articles.length;
         setItemOffset(newOffset);
     };
+    
+    const getId = (idArticle) => {
+        const info = articles.filter(a => a.id === idArticle)
+        getInfoArticle(info)
+    }
+
     let arrowleft = () => {
         return (
             <div className='arrow'>
@@ -43,51 +56,13 @@ function ArticlesList() {
         )
     }
 
-    const getId = (idArticle) => {
-        const info = articles.filter(a => a.id === idArticle)
-        getInfoArticle(info)
-    }
-
     return (
         <>
-            <div className='containerListArtLast'>
-                <div className='textCenterArt toplistArtPrevius'><p>AUTHOR NAME</p></div>
-                <div className='toplistArtPrevius'><p>TITLE</p></div>
-                <div className='toplistArtPrevius'><p>CONTENT</p></div>
-                <div className='toplistArtPrevius'><p>DATE</p></div>
-                <div></div>
-                <div></div>
-                {
-                    currentItems === undefined ?
-                        (<Spinner />)
-                        :
-                        currentItems.map((p, index) => {
-                            let day = p.date.slice(0, 10)
-                            let par = null
-                            let inpar = null
-                            if (index % 2 === 0) {
-                                par = 'bgWhite'
-                            } else {
-                                inpar = 'bgGray'
-                            }
-                            return (
-                                <>
-                                    <h4 className={par === null ? inpar : par}>{p.author}</h4>
-                                    <p className={par === null ? inpar : par}>{p.title}</p>
-                                    <p className={par === null ? inpar : par}>{p.content}</p>
-                                    <p className={par === null ? inpar : par}>{day}</p>
-                                    <span
-                                        className={par === null ? inpar : par}
-                                        onClick={() => getId(p.id)}
-                                    >edit</span>
-                                    <AiOutlineClose
-                                        className='deletArticle'
-                                        onClick={() => deletArticle(p.id)} />
-                                </>
-                            )
-                        })
-                }
-            </div>
+            <ArticlesListMap 
+                currentItems={currentItems} 
+                getId={getId} 
+                deletArticle={deletArticle}
+            />
 
 
             <div className='centerPagination'>

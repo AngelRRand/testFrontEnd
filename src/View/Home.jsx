@@ -20,6 +20,7 @@ const Home = () => {
     <main className='containerHome'>
       
       <Welcome/>
+      
       <Presentation/>
       {
         show?(
