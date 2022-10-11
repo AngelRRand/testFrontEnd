@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/FooterStyles.css';
+import '../Styles/FooterStyles.css';
 import { 
   AiFillFacebook,
   AiFillYoutube, 

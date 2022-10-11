@@ -3,8 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 
 //Component
 import Home from './Pages/home/Home.jsx';
-import Nav from './Pages/nav/Nav.jsx';
-import Footer from './Pages/footer/Footer';
+import Nav from './Pages/Nav.jsx';
+import Footer from './Pages/Footer';
 
 //Context
 import ArticleState from './Context/Article/ArticleState';

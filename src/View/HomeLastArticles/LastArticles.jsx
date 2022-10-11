@@ -1,6 +1,6 @@
 import React from 'react';
-import Spinner from '../Component/Spinner';
-import Card from '../Component/Card';
+import Spinner from '../../Component/Spinner';
+import Card from './Card';
 const LastArticles = ({ articles, show, setShow }) => {
 
     const lastArticles = articles.slice(0, 4);

@@ -3,7 +3,7 @@ import ReactPaginate from 'react-paginate';
 import ArticleContext from '../../../Context/Article/ArticleContext.jsx';
 import { AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineClose } from "react-icons/ai";
 import '../../../Styles/home/PaginationStyles.css';
-import Spinner from './Spinner.jsx';
+import Spinner from '../../Component/Spinner.jsx';
 function ArticlesList() {
     const { articles, getArticles, getInfoArticle, deletArticle, infoArticle } = useContext(ArticleContext)
     const [currentItems, setCurrentItems] = useState();
