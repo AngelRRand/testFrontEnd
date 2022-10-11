@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../Styles/home/HomeCard.css';
-const Card = ({ title, author, content, img }) => {
+const LastArticleCard = ({ title, author, content, img }) => {
   return (
     <div className='containerCard'>
       <img className='imageCard' src={img} />
@@ -15,4 +15,4 @@ const Card = ({ title, author, content, img }) => {
   )
 }
 
-export default Card
+export default LastArticleCard

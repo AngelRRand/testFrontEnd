@@ -1,6 +1,6 @@
 import React from 'react';
 import Spinner from '../../Component/Spinner';
-import Card from './LastArticleCard';
+import LastArticleCard from './LastArticleCard.jsx';
 const LastArticles = ({ lastArticles, show, setShow }) => {
 
    
@@ -21,13 +21,14 @@ const LastArticles = ({ lastArticles, show, setShow }) => {
                                 (<Spinner />)
                                 :
                                 lastArticles.map(a => {
-                                    return <Card
+                                    return (
+                                    <LastArticleCard
                                         key={a.id}
                                         title={a.title}
                                         author={a.author}
                                         img={a.image_url}
                                         content={a.content}
-                                    />
+                                    />)
                                 })
                         }
                     </div>
