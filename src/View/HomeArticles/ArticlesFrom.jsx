@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
-import './../../../Styles/home/FormStyles.css';
-import ArticleContext from '../../../Context/Article/ArticleContext';
+import '../../Styles/home/FormStyles.css';
+import ArticleContext from '../../Context/Article/ArticleContext';
 function validateForm(input) {
     let errors = {};
 

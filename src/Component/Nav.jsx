@@ -17,7 +17,7 @@ const Nav = () => {
           <div>
             <ul className='routesNav'>
               <li><Link to='/home'>Home</Link></li>
-              <li><Link to='/code'>Code</Link></li>
+              <li><Link to='/code'>About</Link></li>
               <li><Link to='/about'>Contact</Link></li>
               <li><Link to='/about'>Blog</Link></li>
               <li><Link to='/about'>Careers</Link></li>

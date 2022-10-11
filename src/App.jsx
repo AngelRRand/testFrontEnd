@@ -2,9 +2,9 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom';
 
 //Component
-import Home from './Pages/home/Home.jsx';
-import Nav from './Pages/Nav.jsx';
-import Footer from './Pages/Footer';
+import Home from './View/Home';
+import Nav from './Component/Nav.jsx';
+import Footer from './Component/Footer';
 
 //Context
 import ArticleState from './Context/Article/ArticleState';
