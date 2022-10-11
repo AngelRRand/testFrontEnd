@@ -15,7 +15,7 @@ const Home = () => {
     getArticles()
 
   }, [articles, infoArticle]);
-
+  const lastArticles = articles.slice(0, 4);
   return (
     <main className='containerHome'>
       
@@ -29,7 +29,7 @@ const Home = () => {
           <></>
         )
       }
-      <LastArticles articles={articles} show={show} setShow={setShow}/>
+      <LastArticles lastArticles={lastArticles} show={show} setShow={setShow}/>
 
     </main>
   )

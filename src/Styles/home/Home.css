@@ -1,11 +1,11 @@
 /******************************* Component Welcome *******************************/
 .containerHome {
     background-color: #F4F5F7;
+    margin: 0vh 8vw;
 }
 
 .containerWelcome {
     display: flex;
-
     width: 100vw;
     height: 90vh;
     justify-content: center;
