@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import '../../Styles/home/FormStyles.css';
 import ArticleContext from '../../Context/Article/ArticleContext';
+import ArticlesFromEs from './ArticlesFromEs.jsx';
 function validateForm(input) {
     let errors = {};
 
@@ -37,7 +38,7 @@ function validateForm(input) {
 }
 
 const ArticlesFrom = () => {
-    const { postArticle, infoArticle, putArticle, deletInfoArticle, getArticles} = useContext(ArticleContext)
+    const { postArticle, infoArticle, putArticle, deletInfoArticle, getArticles } = useContext(ArticleContext)
     const [error, setErrors] = useState('');
     const [input, setInput] = useState({
         author: '',
@@ -46,8 +47,7 @@ const ArticlesFrom = () => {
     })
     useEffect(() => {
 
-        if(infoArticle.length > 0){
-            //let {author} = infoArticle
+        if (infoArticle.length > 0) {
             setInput({
                 author: infoArticle[0].author,
                 title: infoArticle[0].title,
@@ -63,8 +63,8 @@ const ArticlesFrom = () => {
             !error.author &&
             !error.title &&
             !error.content
-        ){
-            if(infoArticle.length > 0){
+        ) {
+            if (infoArticle.length > 0) {
                 alert("Your article has been update successfully");
                 putArticle(input, infoArticle[0].id)
                 deletInfoArticle()
@@ -75,7 +75,7 @@ const ArticlesFrom = () => {
                     content: "",
                 });
                 return
-            }else{
+            } else {
                 alert("Your article has been created successfully");
                 postArticle(input);
                 getArticles()
@@ -104,57 +104,12 @@ const ArticlesFrom = () => {
     };
 
     return (
-        <>
-        <form onSubmit={(e) => handleSubmit(e)} className='containerFormArticles'>
-            <div className='divForm'>
-                <div className='labelSpanForm'>
-                    <label htmlFor='author'>Author</label>
-                    <span>{error.author}</span>
-                </div>
-                <input
-                    type="text"
-                    value={input.author}
-                    name='author'
-                    placeholder='Horacio'
-                    id='author'
-                    onChange={(e) => handleChange(e)}
-                />
-            </div>
-            <div className='divForm'>
-                <div className='labelSpanForm'>
-                    <label htmlFor='title'>Blog Title</label>
-                    <span>{error.title}</span>
-                </div>
-                <input
-                    type="text"
-                    value={input.title}
-                    name='title'
-                    placeholder='Receta nueva'
-                    id='title'
-                    onChange={(e) => handleChange(e)}
-                />
-            </div>
-            <div className='divForm'>
-                <div className='labelSpanForm'>
-                    <label htmlFor='content'>Blog Content</label>
-                    <span>{error.content}</span>
-                </div>
-                <textarea
-                    type="text"
-                    value={input.content}
-                    name='content'
-                    placeholder='Pan, huevo, pan , huevo'
-                    id='content'
-                    onChange={(e) => handleChange(e)}
-                />
-            </div>
-            <input
-                type="submit"
-                className='btnNav btnfrom'
-                value={infoArticle.length > 0 ? 'Edit' : 'Save'}
-            />
-        </form>
-        </>
+        <ArticlesFromEs
+            handleSubmit={handleSubmit}
+            handleChange={handleChange}
+            error={error}
+            input={input}
+        />
     )
 }
 
