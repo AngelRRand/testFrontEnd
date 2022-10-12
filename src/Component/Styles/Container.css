@@ -1,3 +1,6 @@
 .container{
     margin: 0px 8vw;
 }
+.title{
+    display: flex;
+}

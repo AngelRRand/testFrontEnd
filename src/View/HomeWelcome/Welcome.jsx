@@ -6,7 +6,9 @@ import './Welcome.css'
 
 const Welcome = () => {
     return (
-        <Container>
+        <Container
+            style={true}
+        >
                 <div className='centertextWelcome'>
                     <Title
                         title='Next generation digital banking'
@@ -19,7 +21,6 @@ const Welcome = () => {
                     </button>
 
                 </div>
-
             <WelcomeImages />
         </Container>
     )

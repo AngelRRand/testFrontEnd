@@ -9,7 +9,6 @@
     justify-content: center;
 }
 
-
 .centertextWelcome {
     display: flex;
     flex-direction: column;
@@ -19,26 +18,15 @@
 
 
 @media screen and (min-width: 800px) {
-     .containerWelcome {
-        width: 90vw;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .containertextWelcome {
-        width: 50vw;
-    }
-
+   
     .containerImages {
         display: flex;
-        width: 40vw;      
     }
 
     .containerImages img {
         position: absolute;
-        width: 50vw;
+        width: 40vw;
     }
-
     .centertextWelcome h2 {
         font-size: 4rem;
         font-weight: 600;

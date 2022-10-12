@@ -1,9 +1,9 @@
 import React from 'react'
 import './Styles/Container.css'
-const Container = (props) => {
+const Container = ({children, style}) => {
   return (
-    <section className='container'>
-      {props.children}
+    <section className={style === true ? 'container title' : 'container'}>
+      {children}
     </section>
   )
 }
