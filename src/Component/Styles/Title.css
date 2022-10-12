@@ -1,0 +1,8 @@
+.title{
+    margin-bottom: 1vh;
+}
+@media screen and (min-width: 800px) {
+    .title{
+        margin-bottom: 3vh;
+    }
+}

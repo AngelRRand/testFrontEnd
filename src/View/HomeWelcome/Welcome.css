@@ -26,7 +26,7 @@
 }
 
 @media screen and (min-width: 800px) {
-    .containerWelcome {
+     .containerWelcome {
         width: 90vw;
         display: flex;
         height: 90vh;
