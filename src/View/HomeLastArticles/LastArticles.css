@@ -10,13 +10,16 @@
     align-items: center;
     overflow: hidden;
 }
+
+/************** Card ***************/
+
 .containerCard{
     width: 90vw;
     margin: 5vh 0px;
     background-color: rgb(255, 255, 255);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    height: 60vh;
+    height: 50vh;
 }
 .imageCard{
     border-top-right-radius: 10px;
@@ -25,7 +28,7 @@
     width: 100%;
 }
 .containerTextCard{
-    padding: 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
     margin-left: 10px;
@@ -39,8 +42,7 @@
 .textCard span{
     font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.15rem;
-    
+    line-height: 1.5rem;
 }
 .textCard h4{
     font-size: 1.5rem;

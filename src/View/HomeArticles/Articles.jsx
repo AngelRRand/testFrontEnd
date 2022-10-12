@@ -7,7 +7,6 @@ const Articles = () => {
 
   return (
     <section className='containerArticles'>
-      <div className='marginAddArticle formMargin'>
 
         <Title
           title='Add New Blog Article'
@@ -17,9 +16,6 @@ const Articles = () => {
           <ArticlesFrom />
         </div>
 
-      </div>
-
-      <div className='marginAddArticle'>
 
         <Title
           title='Previous Articles'
@@ -29,7 +25,6 @@ const Articles = () => {
           <ArticlesList />
         </div>
 
-      </div>
     </section>
   )
 }

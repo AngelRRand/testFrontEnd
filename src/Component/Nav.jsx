@@ -6,14 +6,9 @@ const Nav = () => {
     <nav className='containerNav'>
       <div className='marginContainersNav'>
         <div className='containerContentNav'>
-          <div className='logoNav'>
-            <div className='containerLogo'>
-              <div className='paralelogramoLeft logo'></div>
-              <div className='paralelogramoMid logo'></div>
-              <div className='paralelogramoRight logo'></div>
-            </div>
-            <p >easybank</p>
-          </div>
+          
+          {/* LGO */}
+
           <div>
             <ul className='routesNav'>
               <li><Link to='/home'>Home</Link></li>

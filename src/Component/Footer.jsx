@@ -17,14 +17,9 @@ const Footer = () => {
           <div className='containerLeftFooter'>
 
             <div className='logoNetFooter'>
-              <div className='logoFooter'>
-                <div className='containerLogo'>
-                  <div className='paralelogramoLeft logo'></div>
-                  <div className='paralelogramoMid logo'></div>
-                  <div className='paralelogramoRight logo'></div>
-                </div>
-                <p >easybank</p>
-              </div>
+              
+              {/* LGO */}
+
               <div className='netFooter'>
                 <AiFillFacebook className='iconNet'/>
                 <AiFillYoutube className='iconNet'/>

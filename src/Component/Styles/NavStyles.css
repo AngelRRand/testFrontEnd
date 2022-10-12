@@ -2,7 +2,7 @@
     background-color: #ffffff;
 }
 .marginContainersNav{
-    margin: 0vh 5vw;
+    margin: 0vh 8vw;
 }
 .containerContentNav{
     display: flex;
@@ -10,34 +10,6 @@
     align-items: center;
     height: 9vh;
     overflow: hidden;
-}
-.logoNav {
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-}
-.containerLogo{
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    
-}
-.logo{
-    width: 7px; 
-    height: 25px;
-    margin: 1.4px;  
-}
-.logoNav p{
-    margin-left: 1px;
-    font-size: 1.3rem;
-    font-weight: 800;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(41, 41, 41);
 }
 .routesNav {
     display: flex;
@@ -64,12 +36,6 @@
 
 @media screen and (min-width: 800px) {
     
-    .logoNav {
-        flex-direction: row;
-        font-size: 1.3rem;
-        font-weight: 600;
-    }
-
     .routesNav li a {
         text-decoration: none;
         font-weight: 600;

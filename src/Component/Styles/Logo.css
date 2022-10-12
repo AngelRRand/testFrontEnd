@@ -1,0 +1,61 @@
+.logoNav {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.containerLogo {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+.logo {
+    width: 7px;
+    height: 25px;
+    margin: 1.4px;
+}
+.logoNav p {
+    margin-left: 1px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(41, 41, 41);
+}
+.paralelogramoLeft {
+    background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
+    -webkit-transform: skew(-25deg);
+    -moz-transform: skew(-25deg);
+    -ms-transform: skew(-25deg);
+    -o-transform: skew(-25deg);
+    transform: skew(-25deg);
+}
+.paralelogramoMid {
+    background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
+    -webkit-transform: skew(-25deg);
+    -moz-transform: skew(-25deg);
+    -ms-transform: skew(-25deg);
+    -o-transform: skew(-25deg);
+    transform: skew(-25deg);
+    opacity: 0.5;
+}
+.paralelogramoRight {
+    background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
+    -webkit-transform: skew(-25deg);
+    -moz-transform: skew(-25deg);
+    -ms-transform: skew(-25deg);
+    -o-transform: skew(-25deg);
+    transform: skew(-25deg);
+    opacity: 0.15;
+}
+
+@media screen and (min-width: 800px) {
+    
+    .logoNav {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
