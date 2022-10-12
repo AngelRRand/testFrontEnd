@@ -1,76 +1,54 @@
-
-
-.spanPresentation {
-    width: 100vw;
+.presentation{
+    background: #F4F5F7;
 }
-
-.containerCardsPresentation {
+.cards_container {
     width: 90vw;
     overflow: hidden;
 }
 
-.cardsPresentation {
-    width: 90vw;
-    height: 35vh;
+/*********** Card  ************/
+
+.cardPresent__center{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.iconPresentation {
+.cardPresent__container {
+    width: 90vw;
+    height: 35vh;
+    flex-direction: column;
+}
+.cardPresent__icon {
     width: 15vw;
     height: 15vw;
     margin: 30px 0px;
     border-radius: 50%;
     background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
-    justify-content: center;
-    align-items: center;
-    display: flex;
 }
-
-.cardsPresentation p {
+.cardPresent__container p {
     margin-top: 10px;
     text-align: center;
-
 }
-
 @media screen and (min-width: 800px) {
-    .textPresentation h2 {
-        font-size: 3rem;
-        font-weight: 600;
-        text-align: start;
-    }
-
-    .spanPresentation {
-        width: 60vw;
-    }
-    
-    .containerCardsPresentation {
+    .cards__container {
         display: flex;
         justify-content: space-between;
     }
-
-    .cardsPresentation {
+    .cardPresent__container {
         width: 20vw;
         height: auto;
-        margin: 10px;
         align-items: flex-start;
     }
-
-    .cardsPresentation h4 {
-        font-size: 1.5rem;
+    .cardPresent__container h4 {
         font-weight: 600;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
-
-    .cardsPresentation p {
+    .cardPresent__container p {
         word-spacing: 3px;
         line-height: 25px;
         text-align: start;
     }
-
-    .iconPresentation {
+    .cardPresent__icon {
         width: 5vw;
         height: 5vw;
     }

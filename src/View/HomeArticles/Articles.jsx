@@ -7,8 +7,8 @@ import './Articles.css'
 const Articles = () => {
 
   return (
-    <Container>
-
+    <section className='articles'>
+      <Container>
         <Title
           title='Add New Blog Article'
           text='Publish a new blog article to feature in the Easybank homepage.'
@@ -25,8 +25,8 @@ const Articles = () => {
         <div className='containerArticlesList'>
           <ArticlesList />
         </div>
-
-    </Container>
+      </Container>
+    </section>
   )
 }
 

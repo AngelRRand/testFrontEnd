@@ -1,30 +1,23 @@
-.containerNav {
+.nav {
     background-color: #ffffff;
 }
-.routesNav {
+.routes {
     display: flex;
     list-style: none;
     width: 40vw;
     justify-content: space-around;
 }
-.routesNav li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.routesNav li a {
-    text-decoration: none;
+.route{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 10vh;
     width: 5vw;
+    text-decoration: none;
 }
-.routesNav li:hover{
-    border-bottom: #00c1c2 2px solid;
-}
-.routesNav li:hover a{
+.routes li:hover a{
     color: rgb(41, 41, 41);
+    border-bottom: #00c1c2 2px solid;
 }
 
 @media screen and (min-width: 800px) {
@@ -32,7 +25,7 @@
         background-color: #ffffff;
     }
     
-    .routesNav li a {
+    .routes li a {
         text-decoration: none;
         font-weight: 600;
     }

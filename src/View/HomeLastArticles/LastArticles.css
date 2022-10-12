@@ -1,10 +1,10 @@
-.containerTitleLastArticle {
+.lastArticle__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5vh;
 }
-.containerCards {
+
+.lastArticle__cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@
 
 /************** Card ***************/
 
-.containerCard{
+.lastArticle__card {
     width: 90vw;
     margin: 5vh 0px;
     background-color: rgb(255, 255, 255);
@@ -21,71 +21,75 @@
     border-top-left-radius: 10px;
     height: 50vh;
 }
-.imageCard{
+
+.lastArticle__card img {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     height: 30vh;
     width: 100%;
 }
-.containerTextCard{
-    padding: 10px;
+
+.containerTextCard {
     display: flex;
     align-items: center;
+    padding: 10px;
     margin-left: 10px;
 }
-.textCard {
+
+.containerTextCard {
     margin-top: 2vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.textCard span{
+
+.containerTextCard span {
     font-size: 0.8rem;
     font-weight: 600;
     line-height: 1.5rem;
 }
-.textCard h4{
+
+.containerTextCard h4 {
     font-size: 1.5rem;
     margin: 10px 0px;
 }
-.textCard p{
+
+.containerTextCard p {
     color: rgb(102, 101, 101);
     text-overflow: ellipsis;
 }
 
-
-
 @media screen and (min-width: 800px) {
-    .containerCards {
+    .lastArticle__cards {
         flex-direction: row;
         justify-content: space-between;
     }
-    .containerListArtLast {
-        padding: 1.5vh 1.5vw;
-        border: 1px solid rgb(196, 196, 196);
-        border-radius: 10px;
-        display: grid;
-        grid-template-columns: 1fr repeat(2, 2fr) 1fr 0.3fr 0.1fr;
-        grid-template-rows: repeat(7, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 10px;
-        align-items: center;
-    }
-    .containerListArtLast p {
-        font-size: 1rem;
-    }
-    .containerListArtLast span {
-        font-size: 1rem;
-    }
-    .containerListArtLast h4 {
-        font-size: 1.2rem;
-    }
-    .containerCard{
+
+    .lastArticle__card {
         width: 20vw;
         margin: 0vh 0px;
         height: 70vh;
     }
-    .divForm input{
+
+    .containerTextCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .containerTextCard span {
+        align-items: flex-start;
+    }
+    
+    .containerTextCard h4 {
+        font-size: 1.5rem;
+        margin: 10px 0px;
+    }
+    
+    .containerTextCard p {
+        color: rgb(102, 101, 101);
+        text-overflow: ellipsis;
+    }
+    .divForm input {
         width: 40vw;
     }
 }

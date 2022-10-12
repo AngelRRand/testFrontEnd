@@ -9,19 +9,20 @@ const LastArticles = ({ lastArticles, show, setShow }) => {
 
 
     return (
-        <Container >
-            <div className='containerTitleLastArticle'>
-                <Title
-                    title='Latest Articles'
-                />
-                <Buttom
-                    text={!show ? 'Add New Article' : 'Close'}
-                    action={show}
-                    setAction={setShow}
-                />
-            </div>
-            <div>
-                <div className='containerCards'>
+        <section>
+
+            <Container >
+                <div className='lastArticle__title'>
+                    <Title
+                        title='Latest Articles'
+                    />
+                    <Buttom
+                        text={!show ? 'Add New Article' : 'Close'}
+                        action={show}
+                        setAction={setShow}
+                    />
+                </div>
+                <div className='lastArticle__cards'>
                     {
                         lastArticles.length === 0 ?
                             (<Spinner />)
@@ -38,8 +39,9 @@ const LastArticles = ({ lastArticles, show, setShow }) => {
                             })
                     }
                 </div>
-            </div>
-        </Container>
+            </Container>
+
+        </section>
     )
 }
 

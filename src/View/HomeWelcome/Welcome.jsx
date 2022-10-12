@@ -7,11 +7,11 @@ import './Welcome.css'
 
 const Welcome = () => {
     return (
-        <section className='welcome'>
+        <section>
             <Container
                 style={true}
             >
-                <div className='centertextWelcome'>
+                <div className='center'>
                     <Title
                         title='Next generation digital banking'
                         text='Take your financial online. Your Easybank account will be a one-stop for spendin, saving budgeting, nvesting, and much more.'
