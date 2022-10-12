@@ -2,12 +2,13 @@ import React from 'react';
 import Spinner from '../../Component/Spinner';
 import LastArticleCard from './LastArticlesCard.jsx';
 import Title from '../../Component/Title';
+import Container from '../../Component/Container.jsx';
 import './LastArticles.css'
 const LastArticles = ({ lastArticles, show, setShow }) => {
 
 
     return (
-        <section className='containerLastArticles'>
+        <Container >
             <div className='containerTitleLastArticle'>
 
                 <Title
@@ -39,7 +40,7 @@ const LastArticles = ({ lastArticles, show, setShow }) => {
                     }
                 </div>
             </div>
-        </section>
+        </Container>
     )
 }
 

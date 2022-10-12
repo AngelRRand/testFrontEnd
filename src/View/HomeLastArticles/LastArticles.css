@@ -50,8 +50,7 @@
 }
 .textCard p{
     color: rgb(102, 101, 101);
-    height: 10vh;
-    overflow-wrap: break-word;
+    text-overflow: ellipsis;
 }
 
 

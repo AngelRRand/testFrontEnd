@@ -2,11 +2,12 @@ import React from 'react';
 import ArticlesFrom from './ArticlesFrom';
 import ArticlesList from './ArticlesList';
 import Title from '../../Component/Title';
+import Container from '../../Component/Container.jsx';
 import './Articles.css'
 const Articles = () => {
 
   return (
-    <section className='containerArticles'>
+    <Container>
 
         <Title
           title='Add New Blog Article'
@@ -25,7 +26,7 @@ const Articles = () => {
           <ArticlesList />
         </div>
 
-    </section>
+    </Container>
   )
 }
 

@@ -1,12 +1,13 @@
 import React from 'react';
 import PresentationCard from './PresentationCard';
 import Title from '../../Component/Title';
+import Container from '../../Component/Container.jsx';
 import { Content } from './PresentationHelper';
 import './Presentation.css'
 
 const Presentation = () => {
     return (
-        <section className='containerPresentation'>
+        <Container>
             
             <Title 
                 title='Why choose Easybank?'
@@ -24,7 +25,7 @@ const Presentation = () => {
                 }
 
             </div>
-        </section>
+        </Container>
     )
 }
 

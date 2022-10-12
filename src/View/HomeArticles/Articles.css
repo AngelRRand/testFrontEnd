@@ -50,8 +50,11 @@
 
 .containerListArtLast p {
     font-size: 0.5rem;
-    padding: 10px;
-    height: auto
+    padding: 13px;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .containerListArtLast span {
@@ -179,15 +182,15 @@
 @media screen and (min-width: 800px){
 
     .containerListArtLast h4 {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
     
     .containerListArtLast p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     
     .containerListArtLast span {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
 
