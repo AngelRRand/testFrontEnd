@@ -1,0 +1,54 @@
+.containerWelcome {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    justify-content: center;
+}
+
+.containerImages {
+    display: none;
+}
+
+.containertextWelcome {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.centertextWelcome {
+    flex-direction: column;
+}
+
+.text {
+    margin: 20px 0px;
+}
+
+@media screen and (min-width: 800px) {
+    .containerWelcome {
+        width: 90vw;
+        display: flex;
+        height: 90vh;
+        justify-content: space-between;
+    }
+
+    .containertextWelcome {
+        width: 50vw;
+    }
+
+    .containerImages {
+        display: block;
+        width: 40vw;
+    }
+
+    .containerImages img {
+        position: absolute;
+        width: 50vw;
+    }
+
+    .centertextWelcome h2 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+}

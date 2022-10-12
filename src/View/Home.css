@@ -1,89 +1,6 @@
-/******************************* Component Welcome *******************************/
 .containerHome {
     background-color: #F4F5F7;
     margin: 0vh 8vw;
-}
-
-.containerWelcome {
-    display: flex;
-    width: 100vw;
-    height: 90vh;
-    justify-content: center;
-}
-
-.containerImages {
-    display: none;
-}
-
-.containertextWelcome {
-    width: 90vw;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.centertextWelcome {
-    flex-direction: column;
-}
-
-
-.text {
-    margin: 20px 0px;
-}
-
-
-/****************************** Component Presentation *******************************/
-
-.containerPresentation {
-    overflow: hidden;
-}
-
-
-.textPresentation {
-    margin: 5vh 0vh;
-}
-
-
-.textPresentation span {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-}
-
-.spanPresentation {
-    width: 100vw;
-}
-
-.containerCardsPresentation {
-    width: 90vw;
-    overflow: hidden;
-}
-
-.cardsPresentation {
-    width: 90vw;
-    height: 35vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.iconPresentation {
-    width: 15vw;
-    height: 15vw;
-    margin: 30px 0px;
-    border-radius: 50%;
-    background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.cardsPresentation p {
-    margin-top: 10px;
-    text-align: center;
-
 }
 
 
@@ -94,35 +11,7 @@
 
 
 @media screen and (min-width: 800px) {
-    .containerWelcome {
-        width: 90vw;
-        display: flex;
-        height: 90vh;
-        justify-content: space-between;
-    }
-
-    .containertextWelcome {
-        width: 50vw;
-    }
-
-    .containerImages {
-        display: block;
-        width: 40vw;
-    }
-
-    .containerImages img {
-        position: absolute;
-        width: 50vw;
-    }
-
-    .centertextWelcome h2 {
-        font-size: 4rem;
-        font-weight: 600;
-    }
-
-
-
-
+   
     .containerListArtLast {
         padding: 1.5vh 1.5vw;
         border: 1px solid rgb(196, 196, 196);

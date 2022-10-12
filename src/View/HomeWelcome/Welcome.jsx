@@ -1,5 +1,7 @@
 import React from 'react';
 import WelcomeImages from './WelcomeImages.jsx'
+import './Welcome.css'
+
 const Welcome = () => {
     return (
         <section className='containerWelcome'>

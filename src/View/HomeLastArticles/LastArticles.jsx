@@ -12,7 +12,9 @@ const LastArticles = ({ lastArticles, show, setShow }) => {
                         <h2>Latest Articles</h2>
                     </div>
                     <button className='btnNav text' onClick={()=>setShow(!show)}>
-                        + Add New Article
+                        {
+                            !show ? 'Add New Article' : 'Close'
+                        }
                     </button>
                 </div>
                 <div>
