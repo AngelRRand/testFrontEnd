@@ -1,4 +1,5 @@
 import React from 'react'
+import Buttom from '../../Component/Buttom'
 
 const ArticlesFromEs = ({handleSubmit, handleChange, error, input, infoArticle}) => {
     return (
@@ -45,10 +46,9 @@ const ArticlesFromEs = ({handleSubmit, handleChange, error, input, infoArticle})
                     onChange={(e) => handleChange(e)}
                 />
             </div>
-            <input
-                type="submit"
-                className='btnNav btnfrom'
-                value={infoArticle.length > 0 ? 'Edit' : 'Save'}
+            <Buttom
+                form={true}
+                infoArticle={infoArticle}
             />
         </form>
     )

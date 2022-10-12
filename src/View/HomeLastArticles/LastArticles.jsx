@@ -4,22 +4,21 @@ import LastArticleCard from './LastArticlesCard.jsx';
 import Title from '../../Component/Title';
 import Container from '../../Component/Container.jsx';
 import './LastArticles.css'
+import Buttom from '../../Component/Buttom';
 const LastArticles = ({ lastArticles, show, setShow }) => {
 
 
     return (
         <Container >
             <div className='containerTitleLastArticle'>
-
                 <Title
                     title='Latest Articles'
-                    text=''
                 />
-                <button className='btnNav text' onClick={() => setShow(!show)}>
-                    {
-                        !show ? 'Add New Article' : 'Close'
-                    }
-                </button>
+                <Buttom
+                    text={!show ? 'Add New Article' : 'Close'}
+                    action={show}
+                    setAction={setShow}
+                />
             </div>
             <div>
                 <div className='containerCards'>

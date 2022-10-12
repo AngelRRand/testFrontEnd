@@ -2,17 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './Styles/NavStyles.css'
 import Logo from './Logo';
+import Buttom from './Buttom';
 const Nav = () => {
   return (
     <nav className='containerNav'>
-      <div className='marginContainersNav'>
         <div className='containerContentNav'>
-          
-          {/* LGO */}
-          
           <Logo colorTitle='black'/>
-
-          <div>
             <ul className='routesNav'>
               <li><Link to='/home'>Home</Link></li>
               <li><Link to='/code'>About</Link></li>
@@ -20,15 +15,11 @@ const Nav = () => {
               <li><Link to='/about'>Blog</Link></li>
               <li><Link to='/about'>Careers</Link></li>
             </ul>
-          </div>
-          <div>
-            <button className='btnNav'>
-              Request Invite
-            </button>
-          </div>
+            <Buttom
+              text='Request Invite'
+              
+            />
         </div>
-      </div>
-
     </nav>
   )
 }

@@ -1,6 +1,13 @@
 .container{
-    margin: 0px 8vw;
+    margin: 0px 2vw;
 }
 .title{
     display: flex;
+}
+
+@media screen and (min-width: 800px) {
+    
+    .container{
+        margin: 0px 8vw;
+    }
 }

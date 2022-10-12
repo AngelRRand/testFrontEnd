@@ -25,7 +25,8 @@
 
     .containerImages img {
         position: absolute;
-        width: 40vw;
+        width: 45vw;
+        right: 0;
     }
     .centertextWelcome h2 {
         font-size: 4rem;

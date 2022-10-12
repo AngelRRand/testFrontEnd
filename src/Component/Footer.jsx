@@ -9,6 +9,7 @@ import {
 import { RiPinterestFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
+import Buttom from './Buttom';
 const Footer = () => {
   return (
     <footer className='containerFooter'>
@@ -19,7 +20,6 @@ const Footer = () => {
 
             <div className='logoNetFooter'>
               
-              {/* LGO */}
               <Logo colorTitle='white'/>
 
               <div className='netFooter'>
@@ -50,9 +50,9 @@ const Footer = () => {
 
           <div className='containerRightFooter'>
             <div className='btnCopyFooter'>
-              <button className='btnNav text'>
-                Request Invite
-              </button>
+              <Buttom
+                text='Request Invite'
+              />
               <span>© Easybank. All Rights Reserved</span>
             </div>
           </div>

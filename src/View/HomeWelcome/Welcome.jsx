@@ -2,6 +2,7 @@ import React from 'react';
 import WelcomeImages from './WelcomeImages.jsx'
 import Title from '../../Component/Title.jsx';
 import Container from '../../Component/Container.jsx';
+import Buttom from '../../Component/Buttom.jsx';
 import './Welcome.css'
 
 const Welcome = () => {
@@ -16,9 +17,9 @@ const Welcome = () => {
                     />
                     
 
-                    <button className='btnNav text'>
-                        Request Invite
-                    </button>
+                    <Buttom
+                        text='Request Invite'
+                    />
 
                 </div>
             <WelcomeImages />

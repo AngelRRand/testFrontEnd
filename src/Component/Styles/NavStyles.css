@@ -1,15 +1,13 @@
 .containerNav {
     background-color: #ffffff;
 }
-.marginContainersNav{
-    margin: 0vh 8vw;
-}
 .containerContentNav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 9vh;
     overflow: hidden;
+    margin: 0px 100px;
 }
 .routesNav {
     display: flex;
