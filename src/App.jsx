@@ -14,11 +14,9 @@ function App() {
   return (
     <ArticleState>
         <Nav />
-
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
-
         <Footer/>
     </ArticleState>
   )

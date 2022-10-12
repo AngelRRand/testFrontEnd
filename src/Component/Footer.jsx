@@ -10,11 +10,13 @@ import { RiPinterestFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import Buttom from './Buttom';
+import Container from './Container';
 const Footer = () => {
   return (
     <footer className='containerFooter'>
-      <div className='marginFooter'>
-        <div className='containerContentFooter'>
+        <Container
+          footer={true}
+        >
 
           <div className='containerLeftFooter'>
 
@@ -45,19 +47,14 @@ const Footer = () => {
             </div>
 
           </div>
-
-
-
           <div className='containerRightFooter'>
-            <div className='btnCopyFooter'>
               <Buttom
                 text='Request Invite'
               />
-              <span>© Easybank. All Rights Reserved</span>
-            </div>
+              <p>© Easybank. All Rights Reserved</p>
           </div>
-        </div>
-      </div>
+
+        </Container>
     </footer>
   )
 }

@@ -7,23 +7,25 @@ import './Welcome.css'
 
 const Welcome = () => {
     return (
-        <Container
-            style={true}
-        >
+        <section className='welcome'>
+            <Container
+                style={true}
+            >
                 <div className='centertextWelcome'>
                     <Title
                         title='Next generation digital banking'
                         text='Take your financial online. Your Easybank account will be a one-stop for spendin, saving budgeting, nvesting, and much more.'
                     />
-                    
+
 
                     <Buttom
                         text='Request Invite'
                     />
 
                 </div>
-            <WelcomeImages />
-        </Container>
+                <WelcomeImages />
+            </Container>
+        </section>
     )
 }
 

@@ -1,14 +1,6 @@
 .containerNav {
     background-color: #ffffff;
 }
-.containerContentNav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 9vh;
-    overflow: hidden;
-    margin: 0px 100px;
-}
 .routesNav {
     display: flex;
     list-style: none;
@@ -16,14 +8,17 @@
     justify-content: space-around;
 }
 .routesNav li{
-    height: 9vh;
-    width: 10vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .routesNav li a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 5vw;
 }
 .routesNav li:hover{
     border-bottom: #00c1c2 2px solid;
@@ -33,6 +28,9 @@
 }
 
 @media screen and (min-width: 800px) {
+    .containerNav {
+        background-color: #ffffff;
+    }
     
     .routesNav li a {
         text-decoration: none;

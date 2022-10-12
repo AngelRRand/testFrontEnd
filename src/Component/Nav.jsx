@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 import './Styles/NavStyles.css'
 import Logo from './Logo';
 import Buttom from './Buttom';
+import Container from './Container';
 const Nav = () => {
   return (
     <nav className='containerNav'>
-        <div className='containerContentNav'>
+        <Container
+          nav={true}
+        >
           <Logo colorTitle='black'/>
             <ul className='routesNav'>
               <li><Link to='/home'>Home</Link></li>
@@ -17,9 +20,8 @@ const Nav = () => {
             </ul>
             <Buttom
               text='Request Invite'
-              
             />
-        </div>
+        </Container>
     </nav>
   )
 }

@@ -17,7 +17,7 @@ const Home = () => {
   }, [articles, infoArticle]);
   const lastArticles = articles.slice(0, 4);
   return (
-    <main className='containerHome'>
+    <main className='home'>
       
       <Welcome/>
       
