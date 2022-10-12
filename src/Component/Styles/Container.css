@@ -1,16 +1,16 @@
 .container{
     margin: 0px 2vw;
 }
-.container_styles{
+.container__styles{
     display: flex;
     overflow: hidden;
     justify-content: space-between;
     align-items: center;
 }
-.container_nav{
+.container__nav{
     max-height: 10vh;
 }
-.container_footer{
+.container__footer{
     height: 25vh;
 }
 @media screen and (min-width: 800px) {

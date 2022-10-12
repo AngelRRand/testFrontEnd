@@ -68,8 +68,8 @@
     text-align: center;
 }
 .list__font{
-    font-size: 0.5rem;
-    padding: 13px;
+    font-size: 0.7rem;
+    padding: 5px;
 }
 .list__container h4 {
     text-align: center;
@@ -108,6 +108,7 @@
     }
     .list__font{
         font-size: 0.9rem;
+        padding: 15px;
     }
     .formArticles__div input {
         width: 40vw;
