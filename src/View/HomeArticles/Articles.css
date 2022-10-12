@@ -1,0 +1,192 @@
+.containerArticles {
+    background-color: #f3f3f3;
+}
+
+.marginAddArticle {
+    margin: 10vh 0vw;
+}
+
+.containerTitleArticle h2 {
+    margin-bottom: 3vh;
+}
+
+.articlesPreviusText {
+    margin-bottom: 5vh;
+}
+
+.containerArticlesList {
+    margin-top: 5vh;
+}
+
+.centerForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerListArtLast {
+    padding: 1.5vh 1.5vw;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 1fr) 1fr 0.3fr 0.3fr;
+    grid-template-rows: repeat(7, 0.9fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+}
+
+.toplistArtPrevius {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.textCenterArt {
+    text-align: center;
+}
+
+.containerListArtLast h4 {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.6rem;
+}
+
+.containerListArtLast p {
+    font-size: 0.5rem;
+    padding: 10px;
+    height: auto
+}
+
+.containerListArtLast span {
+    color: #31cf70;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.5rem;
+}
+
+.bgGray {
+    background-color: #F4F5F7;
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+.deletArticle {
+    color: crimson;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*************** Pagination ****************/
+
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+.centerPagination{
+    display: flex;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.arrow p{
+    margin: 0px 15px;
+}
+.arrowPaginationPrev{
+    width: 200px;
+    display: flex;
+}
+.arrowPaginationNext{
+    width: 200px;
+    display: flex;
+}
+.containerPageNum{
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+}
+.pageNum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-weight: 600;
+}
+.pageNum:focus{
+    border-top: 3px solid #84E1A7;
+}
+.breakPagination{
+    margin: 0px 10px;
+    text-align: center;
+    font-weight: 600;
+}
+.active{
+    color: #84E1A7;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 800px){
+
+    .containerListArtLast h4 {
+        font-size: 0.8rem;
+    }
+    
+    .containerListArtLast p {
+        font-size: 0.8rem;
+    }
+    
+    .containerListArtLast span {
+        font-size: 0.8rem;
+    }
+
+
+
+
+
+    /*************** Pagination ****************/
+
+
+    .pagination{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .arrowPaginationPrev{
+        width: 100px;
+        cursor: pointer;
+        position: absolute;
+        left:20px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .arrowPaginationNext{
+        width: 100px;
+        cursor: pointer;
+        position: absolute;
+        text-align: center;
+        right:0px;
+        font-weight: 600;
+    }
+}

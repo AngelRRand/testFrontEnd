@@ -109,6 +109,7 @@ const ArticlesFrom = () => {
             handleChange={handleChange}
             error={error}
             input={input}
+            infoArticle={infoArticle}
         />
     )
 }

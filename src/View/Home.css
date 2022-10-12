@@ -37,7 +37,6 @@
 /****************************** Component Presentation *******************************/
 
 .containerPresentation {
-    background-color: #FAFAFA;
     overflow: hidden;
 }
 
@@ -92,114 +91,7 @@
 
 
 
-.containerLastArticles {
-    background-color: #F4F5F7;
-}
 
-
-.containerTitleLastArticle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5vh;
-}
-
-
-.containerCards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-}
-
-
-/****************************** Component Articles ******************************************/
-
-
-
-.containerArticles {
-    background-color: #f3f3f3;
-}
-
-.marginAddArticle {
-    margin: 10vh 0vw;
-}
-
-.containerTitleArticle h2 {
-    margin-bottom: 3vh;
-}
-
-.articlesPreviusText {
-    margin-bottom: 5vh;
-}
-
-.containerArticlesList {
-    margin-top: 5vh;
-}
-
-.centerForm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-
-
-.containerListArtLast {
-    padding: 1.5vh 1.5vw;
-    border: 1px solid rgb(196, 196, 196);
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 1fr) 1fr 0.3fr 0.3fr;
-    grid-template-rows: repeat(7, 0.9fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    align-items: center;
-}
-
-.toplistArtPrevius {
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.textCenterArt {
-    text-align: center;
-}
-
-.containerListArtLast h4 {
-    text-align: center;
-    padding: 10px;
-    font-size: 0.6rem;
-}
-
-.containerListArtLast p {
-    font-size: 0.5rem;
-    padding: 10px;
-    height: auto
-}
-
-.containerListArtLast span {
-    color: #31cf70;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 0.5rem;
-}
-
-.bgGray {
-    background-color: #F4F5F7;
-}
-
-.bgWhite {
-    background-color: white;
-}
-
-.deletArticle {
-    color: crimson;
-    cursor: pointer;
-}
 
 @media screen and (min-width: 800px) {
     .containerWelcome {
@@ -226,54 +118,6 @@
     .centertextWelcome h2 {
         font-size: 4rem;
         font-weight: 600;
-    }
-
-
-    .textPresentation h2 {
-        font-size: 3rem;
-        font-weight: 600;
-        text-align: start;
-    }
-
-    .spanPresentation {
-        width: 60vw;
-    }
-
-    .containerCardsPresentation {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .cardsPresentation {
-        width: 20vw;
-        height: auto;
-        margin: 10px;
-        align-items: flex-start;
-    }
-
-    .cardsPresentation h4 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-
-    .cardsPresentation p {
-        word-spacing: 3px;
-        line-height: 25px;
-        text-align: start;
-    }
-
-    .iconPresentation {
-        width: 5vw;
-        height: 5vw;
-    }
-
-
-    .containerCards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0px;
     }
 
 

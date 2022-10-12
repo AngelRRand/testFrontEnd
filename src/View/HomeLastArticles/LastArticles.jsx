@@ -1,6 +1,7 @@
 import React from 'react';
 import Spinner from '../../Component/Spinner';
-import LastArticleCard from './LastArticleCard.jsx';
+import LastArticleCard from './LastArticlesCard.jsx';
+import './LastArticles.css'
 const LastArticles = ({ lastArticles, show, setShow }) => {
 
    

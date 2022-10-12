@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ArticlesFromEs = ({handleSubmit, handleChange, error, input}) => {
+const ArticlesFromEs = ({handleSubmit, handleChange, error, input, infoArticle}) => {
     return (
         <form onSubmit={(e) => handleSubmit(e)} className='containerFormArticles'>
             <div className='divForm'>

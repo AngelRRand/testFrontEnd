@@ -1,7 +1,7 @@
 import React from 'react';
 import PresentationCard from './PresentationCard';
 import { Content } from './PresentationHelper';
-
+import './Presentation.css'
 
 const Presentation = () => {
     return (

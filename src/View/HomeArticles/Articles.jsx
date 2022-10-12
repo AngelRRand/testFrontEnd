@@ -1,6 +1,7 @@
-import React, { useContext, useState } from 'react';
+import React from 'react';
 import ArticlesFrom from './ArticlesFrom';
 import ArticlesList from './ArticlesList';
+import './Articles.css'
 const Articles = () => {
 
 

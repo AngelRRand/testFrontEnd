@@ -1,5 +1,5 @@
 import React, { useEffect, useContext, useState } from 'react';
-import '../Styles/home/Home.css'
+import './Home.css'
 import ArticleContext from '../Context/Article/ArticleContext.jsx';
 import Welcome from './HomeWelcome/Welcome.jsx';
 import Presentation from './HomePresentation/Presentation.jsx';
