@@ -1,8 +1,11 @@
 import React from 'react'
-
+import './Styles/Container.css'
 const Container = () => {
   return (
-    <div>Container</div>
+    <section className='container'>
+
+
+    </section>
   )
 }
 

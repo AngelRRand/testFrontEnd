@@ -1,3 +1,7 @@
+.containerImages {
+    display: none;
+}
+
 .containerWelcome {
     display: flex;
     width: 100vw;
@@ -5,31 +9,19 @@
     justify-content: center;
 }
 
-.containerImages {
-    display: none;
-}
-
-.containertextWelcome {
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 .centertextWelcome {
+    display: flex;
     flex-direction: column;
+    height: 80vh;
+    justify-content: center;
 }
 
-.text {
-    margin: 20px 0px;
-}
 
 @media screen and (min-width: 800px) {
      .containerWelcome {
         width: 90vw;
         display: flex;
-        height: 90vh;
         justify-content: space-between;
     }
 
@@ -38,8 +30,8 @@
     }
 
     .containerImages {
-        display: block;
-        width: 40vw;
+        display: flex;
+        width: 40vw;      
     }
 
     .containerImages img {
