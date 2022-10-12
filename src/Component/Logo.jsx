@@ -1,6 +1,6 @@
 import React from 'react'
 import './Styles/Logo.css'
-const Logo = () => {
+const Logo = ({colorTitle}) => {
     return (
         <section className='logoNav'>
             <div className='containerLogo'>
@@ -8,7 +8,7 @@ const Logo = () => {
                 <div className='paralelogramoMid logo'></div>
                 <div className='paralelogramoRight logo'></div>
             </div>
-            <p >easybank</p>
+            <p className={colorTitle}>easybank</p>
         </section>
     )
 }

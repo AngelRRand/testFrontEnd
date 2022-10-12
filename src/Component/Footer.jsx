@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/FooterStyles.css';
+import './Styles/FooterStyles.css';
 import { 
   AiFillFacebook,
   AiFillYoutube, 
@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 import { RiPinterestFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 const Footer = () => {
   return (
     <footer className='containerFooter'>
@@ -19,6 +20,7 @@ const Footer = () => {
             <div className='logoNetFooter'>
               
               {/* LGO */}
+              <Logo colorTitle='white'/>
 
               <div className='netFooter'>
                 <AiFillFacebook className='iconNet'/>

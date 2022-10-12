@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import '../Styles/NavStyles.css'
+import './Styles/NavStyles.css'
+import Logo from './Logo';
 const Nav = () => {
   return (
     <nav className='containerNav'>
@@ -8,6 +9,8 @@ const Nav = () => {
         <div className='containerContentNav'>
           
           {/* LGO */}
+          
+          <Logo colorTitle='black'/>
 
           <div>
             <ul className='routesNav'>
