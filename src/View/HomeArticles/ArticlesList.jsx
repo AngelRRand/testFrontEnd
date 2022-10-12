@@ -2,7 +2,6 @@ import React, { useEffect, useState, useContext } from 'react';
 import ReactPaginate from 'react-paginate';
 import ArticleContext from '../../Context/Article/ArticleContext.jsx';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-import '../../Styles/home/PaginationStyles.css';
 
 import ArticlesListMap from './ArticlesListMap.jsx';
 function ArticlesList() {
@@ -12,7 +11,8 @@ function ArticlesList() {
         getArticles, 
         getInfoArticle, 
         deletArticle, 
-        infoArticle } = useContext(ArticleContext)
+        infoArticle 
+    } = useContext(ArticleContext)
     const [currentItems, setCurrentItems] = useState();
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);

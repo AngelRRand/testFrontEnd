@@ -13,7 +13,6 @@ function App() {
 
   return (
     <ArticleState>
-      <div className="App">
         <Nav />
 
         <Routes>
@@ -21,7 +20,6 @@ function App() {
         </Routes>
 
         <Footer/>
-      </div>
     </ArticleState>
   )
 }

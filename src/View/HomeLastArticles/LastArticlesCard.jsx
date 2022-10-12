@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../Styles/home/HomeCard.css';
 const LastArticleCard = ({ title, author, content, img }) => {
   return (
     <div className='containerCard'>

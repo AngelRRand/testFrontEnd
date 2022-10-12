@@ -32,10 +32,6 @@ h2{
 .btnNav:hover{
   filter: brightness(1.2);
 }
-.marginContainers{
-  margin: 5vh 0vw;
-}
-
 .paralelogramoLeft {
   background-image: linear-gradient(to right top, #31cf70, #00cc94, #00c7b0, #00c1c2, #2cb9cb);
   -webkit-transform: skew(-25deg);
@@ -63,8 +59,5 @@ h2{
 @media screen and (min-width: 800px){
   .btnNav{
     width: 14vw;
-  }
-  .marginContainers{
-    margin: 5vh 5vw;
   }
 }

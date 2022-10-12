@@ -1,10 +1,10 @@
 import React, { useEffect, useContext, useState } from 'react';
-import './Home.css'
 import ArticleContext from '../Context/Article/ArticleContext.jsx';
 import Welcome from './HomeWelcome/Welcome.jsx';
 import Presentation from './HomePresentation/Presentation.jsx';
 import LastArticles from './HomeLastArticles/LastArticles.jsx';
 import Articles from './HomeArticles/Articles';
+import './Home.css'
 const Home = () => {
 
   const [show, setShow] = useState(false);
