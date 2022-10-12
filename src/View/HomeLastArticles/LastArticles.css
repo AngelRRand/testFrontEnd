@@ -1,21 +1,19 @@
-.lastArticle__title {
+.lastArticle__center{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+.lastArticle__title {
+    justify-content: space-between;
 }
 
 .lastArticle__cards {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow: hidden;
 }
 
 /************** Card ***************/
 
 .lastArticle__card {
     width: 90vw;
-    margin: 5vh 0px;
     background-color: rgb(255, 255, 255);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -29,33 +27,26 @@
     width: 100%;
 }
 
-.containerTextCard {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin-left: 10px;
-}
-
-.containerTextCard {
+.lartArticle__text {
     margin-top: 2vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
 }
 
-.containerTextCard span {
+.lartArticle__text span {
     font-size: 0.8rem;
     font-weight: 600;
     line-height: 1.5rem;
 }
 
-.containerTextCard h4 {
+.lartArticle__text h4 {
     font-size: 1.5rem;
     margin: 10px 0px;
 }
 
-.containerTextCard p {
-    color: rgb(102, 101, 101);
+.lartArticle__text p {
     text-overflow: ellipsis;
 }
 
@@ -67,29 +58,19 @@
 
     .lastArticle__card {
         width: 20vw;
-        margin: 0vh 0px;
         height: 70vh;
     }
 
-    .containerTextCard {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .containerTextCard span {
+    
+    .lartArticle__text span {
         align-items: flex-start;
     }
     
-    .containerTextCard h4 {
+    .lartArticle__text h4 {
         font-size: 1.5rem;
         margin: 10px 0px;
     }
     
-    .containerTextCard p {
-        color: rgb(102, 101, 101);
-        text-overflow: ellipsis;
-    }
-    .divForm input {
-        width: 40vw;
-    }
+    
+    
 }

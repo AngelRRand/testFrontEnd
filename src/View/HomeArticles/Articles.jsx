@@ -13,18 +13,14 @@ const Articles = () => {
           title='Add New Blog Article'
           text='Publish a new blog article to feature in the Easybank homepage.'
         />
-        <div className='centerForm'>
+        <div className='articles__center'>
           <ArticlesFrom />
         </div>
-
-
         <Title
           title='Previous Articles'
           text='Review and edit previous blog posts published on to the homepage. '
         />
-        <div className='containerArticlesList'>
           <ArticlesList />
-        </div>
       </Container>
     </section>
   )

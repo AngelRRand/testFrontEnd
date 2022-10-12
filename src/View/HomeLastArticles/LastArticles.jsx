@@ -12,7 +12,7 @@ const LastArticles = ({ lastArticles, show, setShow }) => {
         <section>
 
             <Container >
-                <div className='lastArticle__title'>
+                <div className='lastArticle__title lastArticle__center'>
                     <Title
                         title='Latest Articles'
                     />
@@ -22,7 +22,7 @@ const LastArticles = ({ lastArticles, show, setShow }) => {
                         setAction={setShow}
                     />
                 </div>
-                <div className='lastArticle__cards'>
+                <div className='lastArticle__cards lastArticle__center'>
                     {
                         lastArticles.length === 0 ?
                             (<Spinner />)

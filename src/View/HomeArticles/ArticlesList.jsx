@@ -4,6 +4,7 @@ import ArticleContext from '../../Context/Article/ArticleContext.jsx';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 import ArticlesListMap from './ArticlesListMap.jsx';
+import Pagination from '../../Component/Pagination.jsx';
 function ArticlesList() {
 
     const { 
@@ -64,25 +65,12 @@ function ArticlesList() {
                 deletArticle={deletArticle}
             />
 
-
-            <div className='centerPagination'>
-                <ReactPaginate
-                    breakLabel="..."
-                    nextLabel={arrowrigth()}
-                    previousLabel={arrowleft()}
-                    onPageChange={handlePageClick}
-                    pageRangeDisplayed={3}
-                    pageCount={pageCount}
-                    renderOnZeroPageCount={null}
-                    containerClassName='pagination'
-                    pageClassName='containerPageNum'
-                    pageLinkClassName='pageNum'
-                    previousLinkClassName='arrowPaginationPrev'
-                    nextLinkClassName='arrowPaginationNext'
-                    activeLinkClassName='active'
-                    breakLinkClassName='breakPagination'
-                />
-            </div>
+            <Pagination
+                arrowrigth={arrowrigth}
+                arrowleft={arrowleft}
+                pageCount={pageCount}
+                handlePageClick={handlePageClick}
+            />
         </>
     );
 }
