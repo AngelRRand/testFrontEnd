@@ -11,10 +11,14 @@
     max-height: 10vh;
 }
 .container__footer{
-    height: 25vh;
+    flex-direction: column;
 }
 @media screen and (min-width: 800px) {
     .container{
         margin: 0px 8vw;
+    }
+    .container__footer{
+        flex-direction: row;
+        height: 25vh;
     }
 }

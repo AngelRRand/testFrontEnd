@@ -19,7 +19,7 @@ const Footer = () => {
       >
         <div className='footer__container footer__left footer__Mobile'>
 
-          <div className='footer__containerLogo footer__Mobile footer__rigth'>
+          <div className='footer__containerLogo footer__Mobile footer__height'>
             <Logo colorTitle='white' />
             <div className='footer__networks'>
               <AiFillFacebook className='footer__icon' />
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
 
         </div>
-        <div className='footer__container footer__rigth footer__Mobile'>
+        <div className='footer__container footer__rigth footer__Mobile footer__height'>
           <Buttom
             text='Request Invite'
           />
