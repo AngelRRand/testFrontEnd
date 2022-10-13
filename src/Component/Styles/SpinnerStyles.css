@@ -1,9 +1,9 @@
-.container-loading{
+.spinner__container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.sk-folding-cube {
+.spinner__cube {
     margin: 20px auto;
     width: 40px;
     height: 40px;
@@ -12,7 +12,7 @@
     transform: rotateZ(45deg);
 }
 
-.sk-folding-cube .sk-cube {
+.spinner__cube .cube {
     float: left;
     width: 50%;
     height: 50%;
@@ -22,7 +22,7 @@
     transform: scale(1.1);
 }
 
-.sk-folding-cube .sk-cube:before {
+.spinner__cube .cube:before {
     content: '';
     position: absolute;
     top: 0;
@@ -37,32 +37,32 @@
     transform-origin: 100% 100%;
 }
 
-.sk-folding-cube .sk-cube2 {
+.spinner__cube .cube2 {
     -webkit-transform: scale(1.1) rotateZ(90deg);
     transform: scale(1.1) rotateZ(90deg);
 }
 
-.sk-folding-cube .sk-cube3 {
+.spinner__cube .cube3 {
     -webkit-transform: scale(1.1) rotateZ(180deg);
     transform: scale(1.1) rotateZ(180deg);
 }
 
-.sk-folding-cube .sk-cube4 {
+.spinner__cube .cube4 {
     -webkit-transform: scale(1.1) rotateZ(270deg);
     transform: scale(1.1) rotateZ(270deg);
 }
 
-.sk-folding-cube .sk-cube2:before {
+.spinner__cube .cube2:before {
     -webkit-animation-delay: 0.3s;
     animation-delay: 0.3s;
 }
 
-.sk-folding-cube .sk-cube3:before {
+.spinner__cube .cube3:before {
     -webkit-animation-delay: 0.6s;
     animation-delay: 0.6s;
 }
 
-.sk-folding-cube .sk-cube4:before {
+.spinner__cube .cube4:before {
     -webkit-animation-delay: 0.9s;
     animation-delay: 0.9s;
 }

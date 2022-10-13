@@ -1,0 +1,32 @@
+.nav {
+    background-color: #ffffff;
+    position: fixed;
+}
+
+@media screen and (min-width: 800px) {
+    .nav {
+        position: relative;
+    }
+    .route{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        width: 5vw;
+        text-decoration: none;
+    }
+    .nav__routes li:hover a{
+        color: rgb(41, 41, 41);
+        border-bottom: #00c1c2 2px solid;
+    }
+    .nav__routes {
+        display: flex;
+        list-style: none;
+        width: 40vw;
+        justify-content: space-around;
+    }
+    .nav__routes li a {
+        text-decoration: none;
+        font-weight: 600;
+    }
+}

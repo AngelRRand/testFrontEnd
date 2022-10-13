@@ -2,13 +2,13 @@ import React from 'react';
 import './Styles/SpinnerStyles.css';
 const Spinner = () => {
     return (
-        <div className='container-loading'>
+        <div className='spinner__container'>
 
-            <div className="sk-folding-cube">
-                <div className="sk-cube1 sk-cube"></div>
-                <div className="sk-cube2 sk-cube"></div>
-                <div className="sk-cube4 sk-cube"></div>
-                <div className="sk-cube3 sk-cube"></div>
+            <div className="spinner__cube">
+                <div className="cube1 cube"></div>
+                <div className="cube2 cube"></div>
+                <div className="cube4 cube"></div>
+                <div className="cube3 cube"></div>
             </div>
         </div>
     )

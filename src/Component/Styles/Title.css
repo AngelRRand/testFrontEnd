@@ -1,17 +1,17 @@
-.containerTitle{
+.title__container{
     width: 100vw;
 }
 .title{
     margin-bottom: 3vh;
 }
-.containerTitle p{
+.title__container p{
     line-height: 1.5rem;
 }
 @media screen and (min-width: 800px) {
-    .containerTitle{
+    .title__container{
         margin: 10vh 0px;
     }
-    .containerTitle{
-        width: 50vw;
+    .title__container{
+        width: 40vw;
     }
 }

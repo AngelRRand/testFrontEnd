@@ -1,5 +1,5 @@
 import React from 'react';
-import './Styles/Footer.css';
+import './Footer.css';
 import {
   AiFillFacebook,
   AiFillYoutube,
@@ -8,9 +8,9 @@ import {
 } from "react-icons/ai";
 import { RiPinterestFill } from "react-icons/ri";
 import { Link } from 'react-router-dom';
-import Logo from './Logo';
-import Buttom from './Buttom';
-import Container from './Container';
+import Logo from '../Component/Logo';
+import Buttom from '../Component/Buttom';
+import Container from '../Component/Container';
 const Footer = () => {
   return (
     <footer className='footer'>
