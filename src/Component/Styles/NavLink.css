@@ -1,0 +1,46 @@
+.nav__movile{
+    position: fixed;
+    background: #ffffff;
+    margin-top: 6vh;
+    width: 100vw;
+    height: 100vh;
+}
+.nav__movile li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.nav__movile a{
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 5vh;
+    color: rgb(0, 0, 0);
+}
+.nav_btn{
+    margin-top: 5vh;
+}
+@media screen and (min-width: 800px) {
+    .route{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        width: 5vw;
+        text-decoration: none;
+    }
+    .nav__routes li:hover a{
+        color: rgb(41, 41, 41);
+        border-bottom: #00c1c2 2px solid;
+    }
+    .nav__routes {
+        display: flex;
+        list-style: none;
+        width: 40vw;
+        justify-content: space-around;
+    }
+    .nav__routes li a {
+        text-decoration: none;
+        font-weight: 600;
+    }
+}

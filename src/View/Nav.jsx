@@ -20,30 +20,44 @@ const Nav = () => {
   }, [])
 
   return (
-    <nav className='nav'>
-      <Container
-        nav={true}
-      >
-        <Logo colorTitle='black' />
-        {
-          (toggleMenu || screenWidth > 1024) ? (
-            <>
-              <NavLiks />
+    <>
+      <nav className='nav'>
+        <Container
+          nav={true}
+        >
+          <Logo colorTitle='black' />
+          {
+            (screenWidth > 1024) ? (
+              <>
+                <NavLiks />
 
+                <Buttom
+                  text='Request Invite'
+                />
+              </>
+            ) :
               <Buttom
-                text='Request Invite'
+                text={!toggleMenu ? 'Open' : 'Close'}
+                action={toggleMenu}
+                setAction={setToggleMenu}
               />
-            </>
-          ) : (
-            <>
-            
-            </>
-          )
-            
-        }
+          }
 
-      </Container>
-    </nav>
+        </Container>
+      </nav>
+      {
+        !toggleMenu ? (
+          <></>
+        ) : (
+          <>
+            <NavLiks
+              mobile={true}
+            />
+            
+          </>
+        )
+      }
+    </>
   )
 }
 
